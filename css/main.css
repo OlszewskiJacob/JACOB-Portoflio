@@ -13,7 +13,7 @@ html {
   body,
 html {
     position: absolute;
-    width: 45vh;
+    width: auto;
     height: 100vh;
     left: 0;
     top: 0;
