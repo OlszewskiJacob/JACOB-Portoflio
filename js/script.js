@@ -15,3 +15,8 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = "block";  
 }
+
+
+// scroll onclick
+// ar objDiv = document.getElementById("your_div");
+// objDiv.scrollTop = objDiv.scrollHeight;
