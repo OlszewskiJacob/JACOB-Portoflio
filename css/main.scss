@@ -17,6 +17,7 @@ html {
         top: 0;
         margin: 0;
         padding: 0;
+        overflow-x: hidden;
     }
 }
 
@@ -44,9 +45,9 @@ html {
     left: 0;
     z-index: 1000;
 
-    // @media only screen and (max-width: 600px) and (min-width: 0px) {
-    //     width: 45vh;
-    // }
+    @media only screen and (max-width: 600px) and (min-width: 0px) {
+        width: 45vh;
+    }
 }
 
 body::-webkit-scrollbar {
@@ -1027,6 +1028,10 @@ header {
     color: #fff;
     font-size: 22px;
     font-weight: 100;
+    @media only screen and (max-width: 600px) and (min-width: 0px) {
+        font-size: 14px;
+
+    }
 }
 
 //------------------Lets talks------------------

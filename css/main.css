@@ -19,6 +19,7 @@ html {
     top: 0;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
   }
 }
 
@@ -45,6 +46,11 @@ html {
   bottom: 0;
   left: 0;
   z-index: 1000;
+}
+@media only screen and (max-width: 600px) and (min-width: 0px) {
+  .page-container {
+    width: 45vh;
+  }
 }
 
 body::-webkit-scrollbar {
@@ -999,6 +1005,11 @@ header .ul-Contact:active {
   color: #fff;
   font-size: 22px;
   font-weight: 100;
+}
+@media only screen and (max-width: 600px) and (min-width: 0px) {
+  .contact-copy {
+    font-size: 14px;
+  }
 }
 
 .Lets-talk-sec {
