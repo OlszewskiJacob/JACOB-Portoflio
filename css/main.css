@@ -75,6 +75,7 @@ header .logo {
   height: auto;
   width: 70px;
   padding: 1em 0em;
+  transition: 300ms;
 }
 header nav {
   position: relative;
@@ -118,6 +119,10 @@ header .ul-Contact:active {
   text-decoration: underline;
 }
 
+.logo:hover {
+  transform: scale(1.1);
+}
+
 .social-header {
   display: flex;
   list-style-type: none;
@@ -129,13 +134,22 @@ header .ul-Contact:active {
 }
 
 .facebook-icon,
+.instagram-icon {
+  pointer-events: none;
+  opacity: 0.2;
+}
+
+.facebook-icon,
 .instagram-icon,
 .linkedin-icon {
   width: 45px;
   height: auto;
   padding: 1.5em 0.5em 0em 0em;
-  opacity: 0.8;
   transition: 150ms linear;
+}
+
+.linkedin-icon {
+  opacity: 0.8;
 }
 
 .facebook-icon:hover,
@@ -518,7 +532,7 @@ header .ul-Contact:active {
 .about-me {
   text-align: center;
   list-style-type: none;
-  padding: 10em 0em 12em 0em;
+  padding: 10em 0em 20em 0em;
   background-color: #F1F5FF;
 }
 .about-me p {
@@ -636,46 +650,31 @@ header .ul-Contact:active {
 }
 
 .portfolio-carousel-container {
+  margin: auto;
+  transition: 600ms;
   text-align: center;
-  display: inline-block;
 }
 
 .portfolio-block-first,
 .portfolio-block-second,
 .portfolio-block-third,
-.portfolio-block-fourth {
+.portfolio-block-fourth,
+.portfolio-block-fifth,
+.portfolio-block-sixth {
   align-items: center;
-  display: inline-block;
+  display: none;
   margin: auto;
+  width: 768px;
+  height: 432px;
+}
+
+.Slider-Portfolio {
+  transition: 600ms;
+  display: none;
 }
 
 .portfolio-block-first {
-  width: 548px;
-  height: 451px;
-  border-radius: 20px;
-  background: #2986FF 0% 0% no-repeat padding-box;
-  box-shadow: 12px 12px 30px rgba(0, 0, 0, 0.1607843137);
-}
-
-.portfolio-block-second,
-.portfolio-block-third,
-.portfolio-block-fourth {
-  background: #2986FF 0% 0% no-repeat padding-box;
-  box-shadow: 12px 12px 30px rgba(0, 0, 0, 0.1607843137);
-  border-radius: 20px;
-  width: 218px;
-  height: 304px;
-  transition: 150ms linear;
-}
-
-.portfolio-block-first:active,
-.portfolio-block-second:active,
-.portfolio-block-third:active,
-.portfolio-block-fourth:active {
-  box-shadow: 12px 12px 30px rgba(0, 0, 0, 0.1607843137);
-  border-radius: 20px;
-  width: 548px;
-  height: 451px;
+  display: block;
 }
 
 .Contact-section {
@@ -737,13 +736,16 @@ header .ul-Contact:active {
   font-size: 16px;
 }
 
-.Header-talk, .talk-copy, #button-contact-via-mail {
+.Header-talk,
+.talk-copy,
+#button-contact-via-mail {
   bottom: 200px;
   left: 0px;
   position: relative;
 }
 
 #button-contact-via-mail {
+  font-weight: 600;
   cursor: pointer;
   margin: 0em 0em 0em 0em;
   width: 220px;
