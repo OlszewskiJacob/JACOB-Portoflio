@@ -20,6 +20,8 @@ html {
     margin: auto;
     padding: 0;
     overflow-x: hidden;
+    -webkit-overflow-scrolling-x: none;
+    overscroll-behavior-x: none;
   }
 }
 
@@ -269,8 +271,9 @@ header .ul-Contact:active {
 }
 @media only screen and (max-width: 600px) and (min-width: 0px) {
   .title-line {
-    width: 2px;
-    height: 35px;
+    display: none !important;
+    -webkit-animation: none;
+            animation: none;
   }
 }
 
@@ -1027,7 +1030,7 @@ header .ul-Contact:active {
 .Lets-talk-sec {
   text-align: center;
   padding: 20em 0em 16em 0em;
-  background-image: url("/images/contact/contact-transparent.png"), linear-gradient(0.5turn, #FAFAFC, #F1F0F7, #F1F0F7);
+  background-image: url("/images/contact/contact-transparent.png"), linear-gradient(0.5turn, #FAFAFC, #F1F0F7, #ffffff);
   background-position: bottom 0px left 0px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1073,7 +1076,7 @@ header .ul-Contact:active {
 #button-contact-via-mail {
   font-weight: 600;
   cursor: pointer;
-  margin: 0em 0em 0em 0em;
+  margin: 2em 0em 0em 0em;
   width: 220px;
   height: 71px;
   border: none;
