@@ -20,11 +20,11 @@
                 <a href="https://jacobolszewski.com.pl/" class="logo"><img src="/images/SVG/Logo/logo.svg" alt="logo"></a></a>
                 <nav>
                     <ul>
-                        <li><a class="ul-Home" href="#">Home</a></li>
-                        <li><a class="ul-Skills" href="#">Skills</a></li>
-                        <li><a class="ul-About" href="#">About</a></li>
-                        <li><a class="ul-Portfolio" href="#">Portfolio</a></li>
-                        <li><a class="ul-Contact" href="#">Contact</a></li>
+                        <li><a class="ul-Home" onclick="scrollHomeDiv()" >Home</a></li>
+                        <li><a class="ul-Skills" onclick="scrollSkillsDiv()">Skills</a></li>
+                        <li><a class="ul-About" onclick="scrollAboutMeDiv()">About</a></li>
+                        <li><a class="ul-Portfolio" onclick="scrollPortfolioDiv()">Portfolio</a></li>
+                        <li><a class="ul-Contact" onclick="scrollContactDiv()">Contact</a></li>
                     </ul>
                 </nav>
                 <div class="social-header">
@@ -40,7 +40,7 @@
                 </div>
             </header>
         </div>
-        <div class="Home">
+        <div id="Home-Call" class="Home">
             <div class="content">
                 <h1 class="title">Hello!<br>I am Jakub Olszewski</h1>
                 <div class="title-line"></div>
@@ -49,17 +49,17 @@
                         2D & 3D graphics, UX/UI including code writing.</p>
                 </div>
                 <div class="buttons-container">
-                    <button onclick="location.href='#'" href="https://google.com" id="button-color-one"
+                    <button onclick="scrollPortfolioDiv()" href="https://google.com" id="button-color-one"
                         class="cta-home">SEE
                         MY WORK</button>
-                    <button onclick="location.href='#'" id="button-color-two" class="cta-home">CONTACT ME</button>
+                    <button onclick="sendMail()" id="button-color-two" class="cta-home">CONTACT ME</button>
                 </div>
             </div>
             <div class="image-top">
             </div>
         </div>
 
-        <section class="featured">
+        <section id="Skills-Call" class="featured">
             <div class="Skills">
                 <div class="title-2">
                     <h1>Skills learned over years</h1>
@@ -162,7 +162,7 @@
 
 
         </section>
-        <section class="about-me">
+        <section id="About-me-Call" class="about-me">
 
             <div class="about-me-copy-container">
                 <p id="Title-about-us">About me, why<br>
@@ -206,23 +206,24 @@
 
         </section>
 
-        <section class="Portfolio-showcase">
+        <section id="Portfolio-Call" class="Portfolio-showcase">
             <p class="portfolio-header-container">Portfolio movie showcase</p>
             <p class="portfolio-copy-container">This is the work per se, finished projects you managed and built and
                 of which you are proud. It can be any type of project: a template, an illustration, a banner, an animation,
                 a video, etc. Anything that you think represents you and what you can do best.</p>
            
                 <div class="portfolio-carousel-container">
-       
+                    <button class="Slider-Arrow-left" onclick="plusDivs(-1)">&#10094;</button>
+                    <div class="slider-portfolio-images-container">
                         <img class="Slider-Portfolio portfolio-block-first" src="/images/portfolio/design-01.jpg">
                         <img class="Slider-Portfolio portfolio-block-second" src="/images/portfolio/design-02.jpg">
                         <img class="Slider-Portfolio portfolio-block-third" src="/images/portfolio/design-03.jpg">
                         <img class="Slider-Portfolio portfolio-block-fourth" src="/images/portfolio/design-04.jpg">
                         <img class="Slider-Portfolio portfolio-block-fifth" src="/images/portfolio/design-05.jpg">
                         <img class="Slider-Portfolio portfolio-block-sixth" src="/images/portfolio/design-06.jpg">
-                      
-                        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-                        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                    </div>
+
+                        <button class="Slider-Arrow-right" onclick="plusDivs(1)">&#10095;</button>
             
                 <!-- <div class="portfolio-block-first"></div>
                 <div class="portfolio-block-second"></div>
@@ -230,7 +231,7 @@
                 <div class="portfolio-block-fourth"></div> -->
             </div>
         </section>
-        <section class="Contact-section">
+        <section id="Contact-Call" class="Contact-section">
             <div class="image-contact">
                 <a href="#"><img src="images/thatsIt/thatsIt.png" alt="Contact-Graphic"></a>
             </div>
@@ -246,11 +247,11 @@
         </section>
 
 
-        <section class="Lets-talk-sec">
+        <section id="Lets-talk-Call" class="Lets-talk-sec">
             <p class="Header-talk">Let's Talk!</p>
             <p class="talk-copy"> Did you particularly like any of these designs?&nbsp;
                 If so, I would love to know what you enjoyed!</p>
-            <button onclick="location.href='#'" href="https://google.com" id="button-contact-via-mail">CONTACT VIA
+            <button onclick="sendMail()" id="button-contact-via-mail">CONTACT VIA
                 EMAIL</button>
 
 

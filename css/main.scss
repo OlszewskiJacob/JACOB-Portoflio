@@ -1,5 +1,6 @@
 body,
 html {
+    
     left: 0%;
     top: 0%;
     margin: 0;
@@ -67,6 +68,11 @@ a {
 }
 
 .nav-container {
+        user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
     width: 100vw;
     text-align: center;
     position: fixed;
@@ -119,6 +125,7 @@ header {
     }
 
     nav {
+        
         position: relative;
         float: right;
         margin-left: auto;
@@ -145,10 +152,10 @@ header {
     .ul-About,
     .ul-Portfolio,
     .ul-Contact {
+        cursor:context-menu;
         transition-duration: 150ms;
         display: block;
         padding: 0em 1.4em;
-
         @media only screen and (max-width: 600px) and (min-width: 0px) {
             display: none;
         }
@@ -288,8 +295,8 @@ header {
     @media only screen and (max-width: 600px) and (min-width: 0px) {
         // width: 2px;
         // height: 35px;
-        display: none!important;
-        animation:none;
+        display: none !important;
+        animation: none;
     }
 }
 
@@ -320,7 +327,7 @@ header {
     text-align: left;
     font-size: 20px;
     letter-spacing: 0.7px;
-    width: 54%;
+    width: 600px;
 
     @media only screen and (max-width: 600px) and (min-width: 0px) {
         font-size: 14px;
@@ -381,12 +388,18 @@ header {
 .content,
 .image-top {
     display: inline-block;
+    text-align: center;
+    margin: auto;
 
 }
 
 .content {
     text-align: left;
     padding: 10em 0em 0em 0em;
+    margin-left: auto;
+    left: 0;
+    top: 0;
+    position: relative;
 }
 
 .image-top {
@@ -681,7 +694,7 @@ header {
         top: 0;
         left: 0;
         margin: auto;
-        width: 100%;
+        width: 600px;
         font-size: 42px;
         font-weight: 100;
         line-height: 40px;
@@ -696,7 +709,7 @@ header {
         top: 20px;
         left: 0;
         margin: auto;
-        width: 100%;
+        width: 600px;
         font-size: 18px;
 
         @media only screen and (max-width: 600px) and (min-width: 0px) {
@@ -798,7 +811,7 @@ header {
     background-color: #fff;
     padding: 18em 0em 18em 0em;
     text-align: center;
-    width: 100vw;
+    width: 100%;
 
     @media only screen and (max-width: 600px) and (min-width: 0px) {
         padding: 5em 0em 8em 0em;
@@ -834,7 +847,7 @@ header {
     color: #3D3D3D;
     padding: 0em 0em 4em 0em;
     font-size: 16px;
-    width: 38%;
+    width: 600px;
     top: 0;
     left: 0;
     margin: auto;
@@ -860,8 +873,71 @@ header {
         top: 0;
         left: 0;
         margin: auto;
-        margin: auto;
         width: 80%;
+    }
+}
+
+.Slider-Arrow-right,
+.Slider-Arrow-left {
+    transition: 400ms;
+    border: none;
+    // width: 300px;
+    background-color: #fff;
+    font-size: 78px;
+    font-weight: 100;
+
+}
+
+.Slider-Arrow-left,
+.Slider-Arrow-right,
+.slider-portfolio-images-container {
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+
+}
+
+.slider-portfolio-images-container {
+    width: 768px;
+    height: 432px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.Slider-Arrow-left,
+.Slider-Arrow-right {
+    width: 80px;
+    height: auto;
+    // height: 432px;
+    position: relative;
+    top: 0;
+    left: 0;
+    color: #3D3D3D;
+    // padding: 0em 1em;
+}
+
+.Slider-Arrow-right:hover,
+.Slider-Arrow-left:hover {
+    font-size: 82px;
+
+}
+
+
+//.Slider-Arrow-right,.Slider-Arrow-left,.Slider-Portfolio,
+.portfolio-carousel-container {
+    display: inline-block;
+    margin: auto;
+    width: auto;
+    text-align: center;
+    // width: 840px;
+
+    @media only screen and (max-width: 600px) and (min-width: 0px) {
+        width: 100%;
+
     }
 }
 
