@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url(/font/OpenSans-Regular.ttf);
+  src: url(/font/OpenSans-Bold.ttf);
+  src: url(/font/OpenSans-Medium.ttf);
+}
 body,
 html {
   left: 0%;
