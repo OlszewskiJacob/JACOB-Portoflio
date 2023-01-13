@@ -16,6 +16,9 @@ function showDivs(n) {
   }
   x[slideIndex - 1].style.display = 'block';
 }
+
+
+
 //scroll navbar
 function scrollHomeDiv() {
   window.scroll(0,
@@ -51,6 +54,9 @@ function findPosition(obj) {
     return [currenttop];
   }
 }
+
+
+
 //contact mail
 function sendMail() {
   var link = "mailto:jakubolszewski1996@outlook.com"
