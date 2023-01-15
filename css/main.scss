@@ -4,9 +4,10 @@
     src: url(/font/OpenSans-Bold.ttf);
     src: url(/font/OpenSans-Medium.ttf);
 }
+
 body,
 html {
-    
+
     left: 0%;
     top: 0%;
     margin: 0;
@@ -74,11 +75,16 @@ a {
 }
 
 .nav-container {
-        user-select: none; /* supported by Chrome and Opera */
-   -webkit-user-select: none; /* Safari */
-   -khtml-user-select: none; /* Konqueror HTML */
-   -moz-user-select: none; /* Firefox */
-   -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+    /* supported by Chrome and Opera */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
     width: 100vw;
     text-align: center;
     position: fixed;
@@ -131,7 +137,7 @@ header {
     }
 
     nav {
-        
+
         position: relative;
         float: right;
         margin-left: auto;
@@ -158,10 +164,11 @@ header {
     .ul-About,
     .ul-Portfolio,
     .ul-Contact {
-        cursor:context-menu;
+        cursor: context-menu;
         transition-duration: 150ms;
         display: block;
         padding: 0em 1.4em;
+
         @media only screen and (max-width: 600px) and (min-width: 0px) {
             display: none;
         }
@@ -178,9 +185,11 @@ header {
         color: #2BD1E2;
         text-underline-offset: 0.4em;
     }
+
     .ul-Home:active::before {
         transform: scale(10);
-      }
+    }
+
     .ul-Home:active,
     .ul-Skills:active,
     .ul-About:active,
@@ -191,7 +200,7 @@ header {
         transform: scale(1.1);
         text-decoration: underline;
     }
- 
+
 }
 
 .logo:hover {
@@ -256,9 +265,10 @@ header {
 }
 
 .Home {
+    transition: 600ms;
     text-align: center;
-    background-image: url('/images/head_3d_transparent.png'), linear-gradient(0.5turn, #C0D9F8, #C0D9F8, #E0EFFA);
-    background-position: bottom 10px left 0px;
+    background-image: url('/images/Home/HomeImage-1.png'), linear-gradient(0.5turn, #C0D9F8, #C0D9F8, #E0EFFA);
+    background-position: bottom 0px left 0px;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 11em 0em 8em 0em;
@@ -400,6 +410,7 @@ header {
     text-align: center;
     margin: auto;
 
+
 }
 
 .content {
@@ -414,6 +425,8 @@ header {
 .image-top {
     width: 500px;
     height: 340px;
+    pointer-events: none;
+    cursor: none;
 
     @media only screen and (max-width: 600px) and (min-width: 0px) {
         display: none;
@@ -692,7 +705,7 @@ header {
 }
 
 .about-me-copy-container {
-    width:auto;
+    width: auto;
 
     @media only screen and (max-width: 600px) and (min-width: 0px) {
         width: 80%;

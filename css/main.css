@@ -76,11 +76,16 @@ a {
 }
 
 .nav-container {
-  user-select: none; /* supported by Chrome and Opera */
-  -webkit-user-select: none; /* Safari */
-  -khtml-user-select: none; /* Konqueror HTML */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+  /* supported by Chrome and Opera */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
   width: 100vw;
   text-align: center;
   position: fixed;
@@ -236,9 +241,10 @@ header .ul-Contact:active {
 }
 
 .Home {
+  transition: 600ms;
   text-align: center;
-  background-image: url("/images/head_3d_transparent.png"), linear-gradient(0.5turn, #C0D9F8, #C0D9F8, #E0EFFA);
-  background-position: bottom 10px left 0px;
+  background-image: url("/images/Home/HomeImage-1.png"), linear-gradient(0.5turn, #C0D9F8, #C0D9F8, #E0EFFA);
+  background-position: bottom 0px left 0px;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 11em 0em 8em 0em;
@@ -408,6 +414,8 @@ header .ul-Contact:active {
 .image-top {
   width: 500px;
   height: 340px;
+  pointer-events: none;
+  cursor: none;
 }
 @media only screen and (max-width: 600px) and (min-width: 0px) {
   .image-top {

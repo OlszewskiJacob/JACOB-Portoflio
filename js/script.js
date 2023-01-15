@@ -1,3 +1,9 @@
+//working on it!
+function WorkingOnItAlert() {
+  alert("SORRY BUT THIS SECTION IS NOT READY!");
+}
+
+
 //slider: portfolio
 var slideIndex = 1;
 showDivs(slideIndex);
@@ -60,9 +66,48 @@ function findPosition(obj) {
 //contact mail
 function sendMail() {
   var link = "mailto:jakubolszewski1996@outlook.com"
-          //  + "&subject=" + encodeURIComponent("Portfolio:")
-          //  + "&body=" + encodeURIComponent(document.getElementById('myText').value)
-  ;
-  
+    //  + "&subject=" + encodeURIComponent("Portfolio:")
+    //  + "&body=" + encodeURIComponent(document.getElementById('myText').value)
+    ;
+
   window.location.href = link;
 }
+
+
+//animation on header by loading png sequence on mouse move
+
+
+// function AnimHeader() {
+//   Number.prototype.to = function* (end) {
+//     const start = this;
+//     const step = end > start ? 1 : -1;
+//     const fn = function* (n) {
+//       let next = start + step * n;
+//       yield next;
+//       if (next === end) return;
+//       yield* fn(n + 1);
+//     };
+//     yield start;
+//     yield* fn(0);   
+//   }
+
+//   const asc = [...(0).to(50)];
+//   console.log(asc);
+// }
+
+
+function AnimHeader() {
+  //collect mouse information
+  window.addEventListener("mousemove", (e) => {
+    let xPos = e.clientX / 100;
+    console.log(xPos.toFixed(0));
+    //call backgroudnn class and change image on mouse x position
+    var x = document.getElementById("Home-Call");
+    var stylestoChange = '/images/Home/HomeImage-';
+    var numericToAnimate = xPos.toFixed(0) + '.png';
+    x.style = 'background-image:url(' + stylestoChange + numericToAnimate + '), linear-gradient(0.5turn, #C0D9F8, #C0D9F8, #E0EFFA);';
+  });
+}
+
+
+
