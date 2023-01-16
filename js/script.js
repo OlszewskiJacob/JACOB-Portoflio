@@ -97,16 +97,21 @@ function sendMail() {
 
 
 function AnimHeader() {
+  //change width to range
+  let pageXchanges = document.body.offsetWidth;
   //collect mouse information
   window.addEventListener("mousemove", (e) => {
-    let xPos = e.clientX / 100;
-    console.log(xPos.toFixed(0));
+    let xPos = e.clientX / 50;
+    // console.log(xPos.toFixed(0));
+
+
     //call backgroudnn class and change image on mouse x position
     var x = document.getElementById("Home-Call");
     var stylestoChange = '/images/Home/HomeImage-';
     var numericToAnimate = xPos.toFixed(0) + '.png';
-    x.style = 'background-image:url(' + stylestoChange + numericToAnimate + '), linear-gradient(0.5turn, #C0D9F8, #C0D9F8, #E0EFFA);';
+    x.style = 'background-image:url(' + stylestoChange + numericToAnimate + '), linear-gradient(0.5turn, #C0D9F8, #C0D9F8, #E0EFFA);    background-position: bottom ' + e.clientX / 40 * (-1) + 'px left 0px;';
   });
+
 }
 
 

@@ -264,8 +264,19 @@ header {
     transform-origin: 50% 50%;
 }
 
+.backgroundDisplayNone {
+    opacity: 0.0;
+    position: absolute;
+}
+//LOAD IMAGE SO IT WON BUFFER- TEMPORARY SOLUTION ONLY
+.BackLoaderimageZero {
+    background-image: url('/images/Home/HomeImage-0.png'), url('/images/Home/HomeImage-1.png'), url('/images/Home/HomeImage-2.png'), url('/images/Home/HomeImage-3.png'), url('/images/Home/HomeImage-4.png'), url('/images/Home/HomeImage-5.png'), url('/images/Home/HomeImage-6.png'), url('/images/Home/HomeImage-7.png'), url('/images/Home/HomeImage-8.png'), url('/images/Home/HomeImage-9.png'), url('/images/Home/HomeImage-10.png'), url('/images/Home/HomeImage-11.png'), url('/images/Home/HomeImage-12.png'), url('/images/Home/HomeImage-13.png'), url('/images/Home/HomeImage-14.png'),url('/images/Home/HomeImage-15.png'),url('/images/Home/HomeImage-16.png'),url('/images/Home/HomeImage-17.png'),url('/images/Home/HomeImage-18.png'),url('/images/Home/HomeImage-19.png'),url('/images/Home/HomeImage-20.png'),url('/images/Home/HomeImage-21.png'),url('/images/Home/HomeImage-22.png'),url('/images/Home/HomeImage-23.png'),url('/images/Home/HomeImage-24.png'),url('/images/Home/HomeImage-25.png'),url('/images/Home/HomeImage-26.png'),url('/images/Home/HomeImage-27.png'),url('/images/Home/HomeImage-28.png'),url('/images/Home/HomeImage-29.png'),url('/images/Home/HomeImage-30.png'),url('/images/Home/HomeImage-31.png'),url('/images/Home/HomeImage-32.png'),url('/images/Home/HomeImage-33.png'),url('/images/Home/HomeImage-34.png'),url('/images/Home/HomeImage-35.png'),url('/images/Home/HomeImage-36.png'),url('/images/Home/HomeImage-37.png'),url('/images/Home/HomeImage-38.png'),url('/images/Home/HomeImage-39.png'),url('/images/Home/HomeImage-40.png'),url('/images/Home/HomeImage-41.png'),url('/images/Home/HomeImage-42.png'),url('/images/Home/HomeImage-43.png'),url('/images/Home/HomeImage-44.png'),url('/images/Home/HomeImage-45.png'),url('/images/Home/HomeImage-46.png'),url('/images/Home/HomeImage-47.png'),url('/images/Home/HomeImage-48.png'),url('/images/Home/HomeImage-49.png'),url('/images/Home/HomeImage-50.png'),;
+}
+
+
+
 .Home {
-    transition: 600ms;
+    transition: 0ms;
     text-align: center;
     background-image: url('/images/Home/HomeImage-1.png'), linear-gradient(0.5turn, #C0D9F8, #C0D9F8, #E0EFFA);
     background-position: bottom 0px left 0px;
