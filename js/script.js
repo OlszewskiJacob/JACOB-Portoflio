@@ -2,35 +2,56 @@
 function WorkingOnItAlert() {
   alert("SORRY BUT THIS SECTION IS NOT READY!");
 }
+
 // function onload 
 window.addEventListener("load", (event) => {
   ScrollFooterBackgroundAnimation();
-  document.getElementById('preloader').style.display = "none";
-  document.getElementById('pageContainerIds').style = "overflow:none;";
+  //watch preloader
+  function FunctionTiming() {
+    return new Promise((resolve, reject) => {
+      let y = 0
+      setTimeout(() => {
+        for (i = 0; i < 2; i++) {
+          y++
+        }
+        document.getElementById('pageContainerIds').style = "overflow:none;";
+        document.getElementById('preloader').style.display = "none";
+        resolve(y)
+      }, 2000)
+    })
+  }
+
+
+  async function secondFunctionTiming() {
+    const result = await FunctionTiming()
+  };
+
+  secondFunctionTiming()
+
 });
 
 
 
 //loading page element on scroll
 
- window.addEventListener('scroll', reveal);
+window.addEventListener('scroll', reveal);
 
- function reveal() {
-   let reveals = document.querySelectorAll('.reveal');
- 
-   for (let i = 0; i < reveals.length; i++) {
-     let windowheight = window.innerHeight;
-     let revealtop = reveals[i].getBoundingClientRect().top;
-     let revealpoint = 80;
-     if (revealtop < windowheight - revealpoint) {
-       reveals[i].classList.add('active');
-     }
-     else {
-       reveals[i].classList.remove('active');
-     }
-   }
- }
- 
+function reveal() {
+  let reveals = document.querySelectorAll('.reveal');
+
+  for (let i = 0; i < reveals.length; i++) {
+    let windowheight = window.innerHeight;
+    let revealtop = reveals[i].getBoundingClientRect().top;
+    let revealpoint = 80;
+    if (revealtop < windowheight - revealpoint) {
+      reveals[i].classList.add('active');
+    }
+    else {
+      reveals[i].classList.remove('active');
+    }
+  }
+}
+
 
 //slider: portfolio
 let slideIndex = 1;
@@ -50,7 +71,6 @@ function showDivs(n) {
   }
   x[slideIndex - 1].style.display = 'block';
 }
-
 
 
 //scroll navbar
@@ -118,7 +138,6 @@ function AnimHeader() {
 
 //animation on footer by loading png sequence base on scroll
 function ScrollFooterBackgroundAnimation() {
-  // if (window.scrollY){
 
   let sciezka = '/images/contact/contactSequence/';
   let latestKnownScrollY = 0,
@@ -126,12 +145,6 @@ function ScrollFooterBackgroundAnimation() {
     ticking = false,
     item = document.querySelectorAll('.Lets-talk-sec');
 
-
-  //Size of the page on plus or minus
-  // window.addEventListener('resize', () => {
-  //   let browserZoomLevel = Math.round(window.devicePixelRatio * 100);
-  //   // console.log(browserZoomLevel)
-  // })
 
 
   function update() {
@@ -181,64 +194,6 @@ function ScrollFooterBackgroundAnimation() {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-//quity working but no
-
-  // let callbacks = [];
-  // let scrollPosition = -1;
-  // let animatedKilled = false;
-
-  // const animate = () => {
-
-  //   requestAnimationFrame(onScroll);
-
-  // }
-
-  // function onScroll() {
-  //   if (animatedKilled) return;
-
-  //   if (scrollPosition !== window.pageYOffset) {
-  //     window.removeEventListener('scroll', animate);
-  //     scrollPosition = window.pageYOffset;
-  //     callbacks.forEach(cb => cb(scrollPosition));
-  //     animate();
-  //     console.log('work');
-  //     document.getElementById("AnimFooterCall").style = "animation-play-state:running;";
-
-  //   } else {
-  //     document.getElementById("AnimFooterCall").style = "animation-play-state:reverse;";
-  //     document.getElementById("AnimFooterCall").style = "animation-play-state:paused;";
-  //     console.log('doesnt');
-  //     window.addEventListener('scroll', animate);
-
-  //   }
-  // }
-
-  // animate();
-
-  // return {
-  //   add: function (cb) {
-
-  //     callbacks = [...callbacks, cb];
-  //   },
-  //   remove: function (cb) {
-  //     callbacks = callbacks.filter(value => value != cb);
-  //   },
-  //   destroy: function () {
-  //     animatedKilled = true;
-  //     window.removeEventListener('scroll', animate);
-  //   }
-  // }
 
 
 

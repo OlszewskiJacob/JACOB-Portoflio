@@ -174,7 +174,7 @@ header {
         display: flex;
         font-size: 18px;
         padding: 1.8em 0em 0em 0em;
-   
+
 
         @media only screen and (max-width: 600px) and (min-width: 0px) {
             font-size: 16px;
@@ -192,7 +192,8 @@ header {
         display: block;
         padding: 0em 1.4em;
         opacity: 1;
-        color:#C0D9F8;
+        color: #C0D9F8;
+
         @media only screen and (max-width: 600px) and (min-width: 0px) {
             display: none;
         }
@@ -1277,7 +1278,7 @@ header {
     overflow: hidden;
     background: #2986FF;
     text-align: center;
-    background-image:url(/images/loader/Preloader.gif);
+    background-image: url(/images/loader/Preloader.gif);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -1285,7 +1286,6 @@ header {
     width: 100vw;
     position: fixed;
     z-index: 10000;
-
 }
 
 // .imageSection {
