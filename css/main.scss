@@ -10,10 +10,12 @@ html {
 
     left: 0%;
     top: 0%;
-    margin: 0;
+    margin: auto;
     padding: 0;
-    width: 100vw;
-    height: 50vw;
+    // width: 100vw;
+    width: 1920px;
+    height: auto;
+    // height: 56.25vw;
     position: absolute;
     font-family: 'Open Sans';
 
@@ -28,6 +30,10 @@ html {
         overflow-x: hidden;
         -webkit-overflow-scrolling-x: none;
         overscroll-behavior-x: none;
+        background-size: 100vw;
+        background-repeat: no-repeat;
+        background-image: url('/images/error/error.jpg');
+
     }
 }
 
@@ -56,7 +62,7 @@ html {
     z-index: 1000;
 
     @media only screen and (max-width: 600px) and (min-width: 0px) {
-        width: 100%;
+        display: none;
     }
 }
 
@@ -268,18 +274,21 @@ header {
     opacity: 0.0;
     position: absolute;
 }
+
 //LOAD IMAGE SO IT WON BUFFER- TEMPORARY SOLUTION ONLY
 .BackLoaderimageZero {
-    background-image: url('/images/Home/HomeImage-0.png'), url('/images/Home/HomeImage-1.png'), url('/images/Home/HomeImage-2.png'), url('/images/Home/HomeImage-3.png'), url('/images/Home/HomeImage-4.png'), url('/images/Home/HomeImage-5.png'), url('/images/Home/HomeImage-6.png'), url('/images/Home/HomeImage-7.png'), url('/images/Home/HomeImage-8.png'), url('/images/Home/HomeImage-9.png'), url('/images/Home/HomeImage-10.png'), url('/images/Home/HomeImage-11.png'), url('/images/Home/HomeImage-12.png'), url('/images/Home/HomeImage-13.png'), url('/images/Home/HomeImage-14.png'),url('/images/Home/HomeImage-15.png'),url('/images/Home/HomeImage-16.png'),url('/images/Home/HomeImage-17.png'),url('/images/Home/HomeImage-18.png'),url('/images/Home/HomeImage-19.png'),url('/images/Home/HomeImage-20.png'),url('/images/Home/HomeImage-21.png'),url('/images/Home/HomeImage-22.png'),url('/images/Home/HomeImage-23.png'),url('/images/Home/HomeImage-24.png'),url('/images/Home/HomeImage-25.png'),url('/images/Home/HomeImage-26.png'),url('/images/Home/HomeImage-27.png'),url('/images/Home/HomeImage-28.png'),url('/images/Home/HomeImage-29.png'),url('/images/Home/HomeImage-30.png'),url('/images/Home/HomeImage-31.png'),url('/images/Home/HomeImage-32.png'),url('/images/Home/HomeImage-33.png'),url('/images/Home/HomeImage-34.png'),url('/images/Home/HomeImage-35.png'),url('/images/Home/HomeImage-36.png'),url('/images/Home/HomeImage-37.png'),url('/images/Home/HomeImage-38.png'),url('/images/Home/HomeImage-39.png'),url('/images/Home/HomeImage-40.png'),url('/images/Home/HomeImage-41.png'),url('/images/Home/HomeImage-42.png'),url('/images/Home/HomeImage-43.png'),url('/images/Home/HomeImage-44.png'),url('/images/Home/HomeImage-45.png'),url('/images/Home/HomeImage-46.png'),url('/images/Home/HomeImage-47.png'),url('/images/Home/HomeImage-48.png'),url('/images/Home/HomeImage-49.png'),url('/images/Home/HomeImage-50.png'),;
+    background-image: url('/images/Home/HomeImage-0.png'), url('/images/Home/HomeImage-1.png'), url('/images/Home/HomeImage-2.png'), url('/images/Home/HomeImage-3.png'), url('/images/Home/HomeImage-4.png'), url('/images/Home/HomeImage-5.png'), url('/images/Home/HomeImage-6.png'), url('/images/Home/HomeImage-7.png'), url('/images/Home/HomeImage-8.png'), url('/images/Home/HomeImage-9.png'), url('/images/Home/HomeImage-10.png'), url('/images/Home/HomeImage-11.png'), url('/images/Home/HomeImage-12.png'), url('/images/Home/HomeImage-13.png'), url('/images/Home/HomeImage-14.png'), url('/images/Home/HomeImage-15.png'), url('/images/Home/HomeImage-16.png'), url('/images/Home/HomeImage-17.png'), url('/images/Home/HomeImage-18.png'), url('/images/Home/HomeImage-19.png'), url('/images/Home/HomeImage-20.png'), url('/images/Home/HomeImage-21.png'), url('/images/Home/HomeImage-22.png'), url('/images/Home/HomeImage-23.png'), url('/images/Home/HomeImage-24.png'), url('/images/Home/HomeImage-25.png'), url('/images/Home/HomeImage-26.png'), url('/images/Home/HomeImage-27.png'), url('/images/Home/HomeImage-28.png'), url('/images/Home/HomeImage-29.png'), url('/images/Home/HomeImage-30.png'), url('/images/Home/HomeImage-31.png'), url('/images/Home/HomeImage-32.png'), url('/images/Home/HomeImage-33.png'), url('/images/Home/HomeImage-34.png'), url('/images/Home/HomeImage-35.png'), url('/images/Home/HomeImage-36.png'), url('/images/Home/HomeImage-37.png'), url('/images/Home/HomeImage-38.png'), url('/images/Home/HomeImage-39.png'), url('/images/Home/HomeImage-40.png'), url('/images/Home/HomeImage-41.png'), url('/images/Home/HomeImage-42.png'), url('/images/Home/HomeImage-43.png'), url('/images/Home/HomeImage-44.png'), url('/images/Home/HomeImage-45.png'), url('/images/Home/HomeImage-46.png'), url('/images/Home/HomeImage-47.png'), url('/images/Home/HomeImage-48.png'), url('/images/Home/HomeImage-49.png'), url('/images/Home/HomeImage-50.png'), ;
 }
-
+.BackLoaderimageOne {
+    background-image: url('/images/contact/contactSequence/frame_1.png'),url('/images/contact/contactSequence/frame_2.png'),url('/images/contact/contactSequence/frame_3.png'),url('/images/contact/contactSequence/frame_4.png'),url('/images/contact/contactSequence/frame_5.png'),url('/images/contact/contactSequence/frame_6.png'),url('/images/contact/contactSequence/frame_7.png'),url('/images/contact/contactSequence/frame_8.png'),url('/images/contact/contactSequence/frame_9.png'),url('/images/contact/contactSequence/frame_10.png'),url('/images/contact/contactSequence/frame_11.png'),url('/images/contact/contactSequence/frame_12.png'),url('/images/contact/contactSequence/frame_13.png'),url('/images/contact/contactSequence/frame_14.png'),url('/images/contact/contactSequence/frame_15.png'),url('/images/contact/contactSequence/frame_16.png'),url('/images/contact/contactSequence/frame_17.png'),url('/images/contact/contactSequence/frame_18.png'),url('/images/contact/contactSequence/frame_19.png'),url('/images/contact/contactSequence/frame_20.png'),url('/images/contact/contactSequence/frame_21.png'),url('/images/contact/contactSequence/frame_22.png'),url('/images/contact/contactSequence/frame_23.png'),url('/images/contact/contactSequence/frame_24.png'),url('/images/contact/contactSequence/frame_25.png'),url('/images/contact/contactSequence/frame_26.png'),url('/images/contact/contactSequence/frame_27.png'),url('/images/contact/contactSequence/frame_28.png'),url('/images/contact/contactSequence/frame_29.png'),url('/images/contact/contactSequence/frame_30.png'),url('/images/contact/contactSequence/frame_31.png'),url('/images/contact/contactSequence/frame_32.png'),url('/images/contact/contactSequence/frame_33.png'),url('/images/contact/contactSequence/frame_34.png'),url('/images/contact/contactSequence/frame_35.png'),url('/images/contact/contactSequence/frame_36.png'),url('/images/contact/contactSequence/frame_37.png'),url('/images/contact/contactSequence/frame_38.png'),url('/images/contact/contactSequence/frame_39.png'),url('/images/contact/contactSequence/frame_40.png'),url('/images/contact/contactSequence/frame_41.png'),;
+}
 
 
 .Home {
     transition: 0ms;
     text-align: center;
     background-image: url('/images/Home/HomeImage-1.png'), linear-gradient(0.5turn, #C0D9F8, #C0D9F8, #E0EFFA);
-    background-position: bottom 0px left 0px;
+    background-position: bottom -80px left 0px;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 11em 0em 8em 0em;
@@ -1169,10 +1178,11 @@ header {
 .Lets-talk-sec {
     text-align: center;
     padding: 20em 0em 16em 0em;
-    background-image: url('/images/contact/contact-transparent.png'), linear-gradient(0.5turn, #FAFAFC, #F1F0F7, #ffffff);
+    // url('/images/contact/contact-transparent.png'),
+    background-image:url('/images/contact/contactSequence/frame_1.png'), linear-gradient(0.5turn, #FAFAFC, #F1F0F7, #ffffff);
     background-position: bottom 0px left 0px;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; 
 
     @media only screen and (max-width: 600px) and (min-width: 0px) {
         padding: 18em 0em 4em 0em;
@@ -1241,3 +1251,46 @@ header {
     transform-origin: 50% 50%;
     background-color: #2986FF;
 }
+
+// .imageSection {
+//     z-index: -11111;
+//     margin: auto;
+//     text-align: center;
+//     display: inline-block;
+//     position: relative;
+//     bottom: 0;
+//     left: 0;
+//     width: 100%;
+//     height: auto;
+
+// }
+
+// .background-image-sequecne-footer {
+//     text-align: center;
+//     position: absolute;
+//     z-index: 11111;
+//     bottom: 0px;
+//     left: 0px;
+//     background-size: cover;
+//     background-image: url('/images/contact/contactSequence/frame_1.png');
+//     //oryginal image size
+//     // width: 960px;
+//     // height: 540px;
+//     width: 100%;
+//     height: 1080px;
+// }
+
+// #AnimFooterCall {
+//     animation: moveY 1s steps(34) infinite;
+//     animation-play-state: paused;
+// }
+
+// @keyframes moveY {
+//     from {
+//         background-position-y: 0px;
+//     }
+
+//     to {
+//         background-position-y: 183600px;
+//     }
+// }
