@@ -117,8 +117,7 @@ a {
   }
 }
 .nav-container a {
-  color: #575757;
-  opacity: 0.77;
+  color: #2986FF;
   font-weight: 700;
 }
 
@@ -181,6 +180,8 @@ header .ul-Contact {
   transition-duration: 150ms;
   display: block;
   padding: 0em 1.4em;
+  opacity: 1;
+  color: #C0D9F8;
 }
 @media only screen and (max-width: 600px) and (min-width: 0px) {
   header .ul-Home,
@@ -199,7 +200,7 @@ header .ul-Contact:hover {
   opacity: 1;
   transform: scale(1.1);
   transform-origin: 50% 50%;
-  color: #2BD1E2;
+  color: #2986FF;
   text-underline-offset: 0.4em;
 }
 header .ul-Home:active::before {
@@ -482,7 +483,7 @@ header .ul-Contact:active {
 
 .Skills {
   background-color: #fff;
-  padding: 6em 0em 10em 0em;
+  padding: 10em 0em 10em 0em;
 }
 .Skills img {
   width: 44px;
@@ -731,7 +732,7 @@ header .ul-Contact:active {
 .about-me {
   text-align: center;
   list-style-type: none;
-  padding: 10em 0em 20em 0em;
+  padding: 12em 0em 28em 0em;
   width: auto;
   background-color: #F1F5FF;
 }
@@ -879,7 +880,7 @@ header .ul-Contact:active {
 
 .Portfolio-showcase {
   background-color: #fff;
-  padding: 18em 0em 18em 0em;
+  padding: 18em 0em 8em 0em;
   text-align: center;
   width: 100%;
 }
@@ -1224,6 +1225,11 @@ header .ul-Contact:active {
 #preloader {
   overflow: hidden;
   background: #2986FF;
+  text-align: center;
+  background-image: url(/images/loader/Preloader.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   height: 100vh;
   width: 100vw;
   position: fixed;
