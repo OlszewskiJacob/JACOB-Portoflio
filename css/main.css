@@ -1204,4 +1204,12 @@ header .ul-Contact:active {
   transform: scale(1.1);
   transform-origin: 50% 50%;
   background-color: #2986FF;
+}
+
+#preloader {
+  background: #2986FF;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 10000;
 }/*# sourceMappingURL=main.css.map */

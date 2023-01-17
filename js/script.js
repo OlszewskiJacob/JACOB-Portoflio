@@ -2,26 +2,11 @@
 function WorkingOnItAlert() {
   alert("SORRY BUT THIS SECTION IS NOT READY!");
 }
-// function onload
+// function onload & preloader
 window.addEventListener("load", (event) => {
   ScrollFooterBackgroundAnimation();
-
-
-
-  // stop scaling 
-  //   console.log('error scaling page!');
-  //   element.addEventListener('wheel', event => {
-  //   const { ctrlKey } = event
-
-  //   if (ctrlKey) {
-  //      event.preventDefault();
-  //      return
-
-  //   }
-  // }, { passive: false })
-
+  document.getElementById('preloader').style.display = "none";
 });
-
 
 
 
@@ -128,18 +113,18 @@ function ScrollFooterBackgroundAnimation() {
     let body = document.body, html = document.documentElement;
     let variableInfoPageHeight = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
     let VariableToAnimateBasedOnHeight = ((variabletoAnimateScroll / variableInfoPageHeight.toFixed(0) * 100).toFixed(0));
+    let VariableToAnimateBasedOnHeightTimeTwo = (((variabletoAnimateScroll) * 3 / variableInfoPageHeight.toFixed(0) * 100).toFixed(0));
     // console.log(window.pageYOffset);
 
     //if page scrolled execute
-    if (VariableToAnimateBasedOnHeight < 73) {
+    if (VariableToAnimateBasedOnHeight < 75) {
       item[0].style = 'background-image:url(' + sciezka + 'frame_1.png),linear-gradient(0.5turn, #FAFAFC, #F1F0F7, #ffffff);';
 
 
     }
-    else if (VariableToAnimateBasedOnHeight > 74) {
+    else if (VariableToAnimateBasedOnHeight > 76) {
 
-      item[0].style = 'background-image:url(' + sciezka + 'frame_' + ((VariableToAnimateBasedOnHeight - 70) * 2).toFixed(0) + '.png),linear-gradient(0.5turn, #FAFAFC, #F1F0F7, #ffffff);    background-position: bottom ' +((VariableToAnimateBasedOnHeight - 85)*-20 ) +'px left 0px;';
-      // console.log();
+      item[0].style = 'background-image:url(' + sciezka + 'frame_' + ((VariableToAnimateBasedOnHeightTimeTwo - 225)).toFixed(0) + '.png),linear-gradient(0.5turn, #FAFAFC, #F1F0F7, #ffffff);';
     }
     else {
       item[0].style = 'background-image:url(' + sciezka + 'frame_34.png),linear-gradient(0.5turn, #FAFAFC, #F1F0F7, #ffffff);';
