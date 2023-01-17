@@ -138,7 +138,7 @@ function ScrollFooterBackgroundAnimation() {
     }
     else if (VariableToAnimateBasedOnHeight > 74) {
 
-      item[0].style = 'background-image:url(' + sciezka + 'frame_' + ((VariableToAnimateBasedOnHeight-70)*2).toFixed(0) + '.png),linear-gradient(0.5turn, #FAFAFC, #F1F0F7, #ffffff);';
+      item[0].style = 'background-image:url(' + sciezka + 'frame_' + ((VariableToAnimateBasedOnHeight - 70) * 2).toFixed(0) + '.png),linear-gradient(0.5turn, #FAFAFC, #F1F0F7, #ffffff);    background-position: bottom ' +((VariableToAnimateBasedOnHeight - 85)*-20 ) +'px left 0px;';
       // console.log();
     }
     else {
