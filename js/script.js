@@ -6,10 +6,9 @@ function WorkingOnItAlert() {
 window.addEventListener("load", (event) => {
   ScrollFooterBackgroundAnimation();
   document.getElementById('preloader').style.display = "none";
+  document.getElementById('pageContainerIds').style = "overflow:none;";
+
 });
-
-
-
 
 //slider: portfolio
 let slideIndex = 1;
@@ -77,6 +76,8 @@ function sendMail() {
 }
 
 
+
+
 //animation on header by loading png sequence on mouse move
 function AnimHeader() {
   //collect mouse information
@@ -104,11 +105,19 @@ function ScrollFooterBackgroundAnimation() {
     item = document.querySelectorAll('.Lets-talk-sec');
 
 
+    //Size of the page on plus or minus
+    // window.addEventListener('resize', () => {
+    //   let browserZoomLevel = Math.round(window.devicePixelRatio * 100);
+    //   // console.log(browserZoomLevel)
+    // })
+
 
   function update() {
     // reset the tick so we can
     // capture the next onScroll
+    //browserZoomLevel >= 150
     ticking = false;
+    let browserZoomLevel = Math.round(window.devicePixelRatio * 100);
     let variabletoAnimateScroll = (latestKnownScrollY).toFixed(0);
     let body = document.body, html = document.documentElement;
     let variableInfoPageHeight = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
@@ -117,12 +126,12 @@ function ScrollFooterBackgroundAnimation() {
     // console.log(window.pageYOffset);
 
     //if page scrolled execute
-    if (VariableToAnimateBasedOnHeight < 75) {
+    if (VariableToAnimateBasedOnHeight < 75 && browserZoomLevel>90 && browserZoomLevel<150) {
       item[0].style = 'background-image:url(' + sciezka + 'frame_1.png),linear-gradient(0.5turn, #FAFAFC, #F1F0F7, #ffffff);';
 
 
     }
-    else if (VariableToAnimateBasedOnHeight > 76) {
+    else if (VariableToAnimateBasedOnHeight > 76 && browserZoomLevel>90 && browserZoomLevel<150) {
 
       item[0].style = 'background-image:url(' + sciezka + 'frame_' + ((VariableToAnimateBasedOnHeightTimeTwo - 225)).toFixed(0) + '.png),linear-gradient(0.5turn, #FAFAFC, #F1F0F7, #ffffff);';
     }
@@ -131,6 +140,7 @@ function ScrollFooterBackgroundAnimation() {
 
     }
   }
+
   function onScroll() {
     latestKnownScrollY = window.scrollY; //No IE8
     requestTick();

@@ -48,7 +48,10 @@ html {
 .semibold {
     font-weight: 600;
 }
-
+#pageContainerId{
+    overflow: hidden;
+    
+}
 .page-container {
     background-color: #fff;
     width: 100vw;
@@ -279,8 +282,9 @@ header {
 .BackLoaderimageZero {
     background-image: url('/images/Home/HomeImage-0.png'), url('/images/Home/HomeImage-1.png'), url('/images/Home/HomeImage-2.png'), url('/images/Home/HomeImage-3.png'), url('/images/Home/HomeImage-4.png'), url('/images/Home/HomeImage-5.png'), url('/images/Home/HomeImage-6.png'), url('/images/Home/HomeImage-7.png'), url('/images/Home/HomeImage-8.png'), url('/images/Home/HomeImage-9.png'), url('/images/Home/HomeImage-10.png'), url('/images/Home/HomeImage-11.png'), url('/images/Home/HomeImage-12.png'), url('/images/Home/HomeImage-13.png'), url('/images/Home/HomeImage-14.png'), url('/images/Home/HomeImage-15.png'), url('/images/Home/HomeImage-16.png'), url('/images/Home/HomeImage-17.png'), url('/images/Home/HomeImage-18.png'), url('/images/Home/HomeImage-19.png'), url('/images/Home/HomeImage-20.png'), url('/images/Home/HomeImage-21.png'), url('/images/Home/HomeImage-22.png'), url('/images/Home/HomeImage-23.png'), url('/images/Home/HomeImage-24.png'), url('/images/Home/HomeImage-25.png'), url('/images/Home/HomeImage-26.png'), url('/images/Home/HomeImage-27.png'), url('/images/Home/HomeImage-28.png'), url('/images/Home/HomeImage-29.png'), url('/images/Home/HomeImage-30.png'), url('/images/Home/HomeImage-31.png'), url('/images/Home/HomeImage-32.png'), url('/images/Home/HomeImage-33.png'), url('/images/Home/HomeImage-34.png'), url('/images/Home/HomeImage-35.png'), url('/images/Home/HomeImage-36.png'), url('/images/Home/HomeImage-37.png'), url('/images/Home/HomeImage-38.png'), url('/images/Home/HomeImage-39.png'), url('/images/Home/HomeImage-40.png'), url('/images/Home/HomeImage-41.png'), url('/images/Home/HomeImage-42.png'), url('/images/Home/HomeImage-43.png'), url('/images/Home/HomeImage-44.png'), url('/images/Home/HomeImage-45.png'), url('/images/Home/HomeImage-46.png'), url('/images/Home/HomeImage-47.png'), url('/images/Home/HomeImage-48.png'), url('/images/Home/HomeImage-49.png'), url('/images/Home/HomeImage-50.png'), ;
 }
+
 .BackLoaderimageOne {
-    background-image: url('/images/contact/contactSequence/frame_1.png'),url('/images/contact/contactSequence/frame_2.png'),url('/images/contact/contactSequence/frame_3.png'),url('/images/contact/contactSequence/frame_4.png'),url('/images/contact/contactSequence/frame_5.png'),url('/images/contact/contactSequence/frame_6.png'),url('/images/contact/contactSequence/frame_7.png'),url('/images/contact/contactSequence/frame_8.png'),url('/images/contact/contactSequence/frame_9.png'),url('/images/contact/contactSequence/frame_10.png'),url('/images/contact/contactSequence/frame_11.png'),url('/images/contact/contactSequence/frame_12.png'),url('/images/contact/contactSequence/frame_13.png'),url('/images/contact/contactSequence/frame_14.png'),url('/images/contact/contactSequence/frame_15.png'),url('/images/contact/contactSequence/frame_16.png'),url('/images/contact/contactSequence/frame_17.png'),url('/images/contact/contactSequence/frame_18.png'),url('/images/contact/contactSequence/frame_19.png'),url('/images/contact/contactSequence/frame_20.png'),url('/images/contact/contactSequence/frame_21.png'),url('/images/contact/contactSequence/frame_22.png'),url('/images/contact/contactSequence/frame_23.png'),url('/images/contact/contactSequence/frame_24.png'),url('/images/contact/contactSequence/frame_25.png'),url('/images/contact/contactSequence/frame_26.png'),url('/images/contact/contactSequence/frame_27.png'),url('/images/contact/contactSequence/frame_28.png'),url('/images/contact/contactSequence/frame_29.png'),url('/images/contact/contactSequence/frame_30.png'),url('/images/contact/contactSequence/frame_31.png'),url('/images/contact/contactSequence/frame_32.png'),url('/images/contact/contactSequence/frame_33.png'),url('/images/contact/contactSequence/frame_34.png'),url('/images/contact/contactSequence/frame_35.png'),url('/images/contact/contactSequence/frame_36.png'),url('/images/contact/contactSequence/frame_37.png'),url('/images/contact/contactSequence/frame_38.png'),url('/images/contact/contactSequence/frame_39.png'),url('/images/contact/contactSequence/frame_40.png'),url('/images/contact/contactSequence/frame_41.png'),;
+    background-image: url('/images/contact/contactSequence/frame_1.png'), url('/images/contact/contactSequence/frame_2.png'), url('/images/contact/contactSequence/frame_3.png'), url('/images/contact/contactSequence/frame_4.png'), url('/images/contact/contactSequence/frame_5.png'), url('/images/contact/contactSequence/frame_6.png'), url('/images/contact/contactSequence/frame_7.png'), url('/images/contact/contactSequence/frame_8.png'), url('/images/contact/contactSequence/frame_9.png'), url('/images/contact/contactSequence/frame_10.png'), url('/images/contact/contactSequence/frame_11.png'), url('/images/contact/contactSequence/frame_12.png'), url('/images/contact/contactSequence/frame_13.png'), url('/images/contact/contactSequence/frame_14.png'), url('/images/contact/contactSequence/frame_15.png'), url('/images/contact/contactSequence/frame_16.png'), url('/images/contact/contactSequence/frame_17.png'), url('/images/contact/contactSequence/frame_18.png'), url('/images/contact/contactSequence/frame_19.png'), url('/images/contact/contactSequence/frame_20.png'), url('/images/contact/contactSequence/frame_21.png'), url('/images/contact/contactSequence/frame_22.png'), url('/images/contact/contactSequence/frame_23.png'), url('/images/contact/contactSequence/frame_24.png'), url('/images/contact/contactSequence/frame_25.png'), url('/images/contact/contactSequence/frame_26.png'), url('/images/contact/contactSequence/frame_27.png'), url('/images/contact/contactSequence/frame_28.png'), url('/images/contact/contactSequence/frame_29.png'), url('/images/contact/contactSequence/frame_30.png'), url('/images/contact/contactSequence/frame_31.png'), url('/images/contact/contactSequence/frame_32.png'), url('/images/contact/contactSequence/frame_33.png'), url('/images/contact/contactSequence/frame_34.png'), url('/images/contact/contactSequence/frame_35.png'), url('/images/contact/contactSequence/frame_36.png'), url('/images/contact/contactSequence/frame_37.png'), url('/images/contact/contactSequence/frame_38.png'), url('/images/contact/contactSequence/frame_39.png'), url('/images/contact/contactSequence/frame_40.png'), url('/images/contact/contactSequence/frame_41.png'), ;
 }
 
 
@@ -1178,13 +1182,13 @@ header {
 .Lets-talk-sec {
     text-align: center;
     padding: 20em 0em 0em 0em;
-    background-image:url('/images/contact/contactSequence/frame_1.png'), linear-gradient(0.5turn, #FAFAFC, #F1F0F7, #ffffff);
+    background-image: url('/images/contact/contactSequence/frame_1.png'), linear-gradient(0.5turn, #FAFAFC, #F1F0F7, #ffffff);
     background-position: bottom 0px left 0px;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative; 
-    width:auto;
-    height:600px;
+    position: relative;
+    width: auto;
+    height: 600px;
 
     @media only screen and (max-width: 600px) and (min-width: 0px) {
         padding: 18em 0em 4em 0em;
@@ -1254,14 +1258,16 @@ header {
     background-color: #2986FF;
 }
 
-#preloader{
-    background:#2986FF;
+#preloader {
+    overflow: hidden;
+    background: #2986FF;
     height: 100vh;
-    width:100vw;
+    width: 100vw;
     position: fixed;
     z-index: 10000;
 
 }
+
 // .imageSection {
 //     z-index: -11111;
 //     margin: auto;
