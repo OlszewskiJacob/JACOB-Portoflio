@@ -5,17 +5,24 @@ function WorkingOnItAlert() {
 // function onload
 window.addEventListener("load", (event) => {
   ScrollFooterBackgroundAnimation();
+
+
+
+  // stop scaling 
+  //   console.log('error scaling page!');
+  //   element.addEventListener('wheel', event => {
+  //   const { ctrlKey } = event
+
+  //   if (ctrlKey) {
+  //      event.preventDefault();
+  //      return
+
+  //   }
+  // }, { passive: false })
+
 });
 
-// block scaling
-element.addEventListener('wheel', event => {
-  const { ctrlKey } = event
-  if (ctrlKey) {
-     event.preventDefault();
-     return
-     console.log('error scaling page!');
-  }
-}, { passive: false })
+
 
 
 
@@ -105,47 +112,53 @@ function AnimHeader() {
 function ScrollFooterBackgroundAnimation() {
   // if (window.scrollY){
 
-  let sciezka='/images/contact/contactSequence/';
+  let sciezka = '/images/contact/contactSequence/';
   let latestKnownScrollY = 0,
 
-	ticking = false,
-  item = document.querySelectorAll('.Lets-talk-sec');
+    ticking = false,
+    item = document.querySelectorAll('.Lets-talk-sec');
 
 
-function update() {
-	// reset the tick so we can
-	// capture the next onScroll
-	ticking = false;
 
-//if page scrolled execute
-if(latestKnownScrollY.toFixed(0)<4800){
- item[0].style='background-image:url('+sciezka + 'frame_1.png),linear-gradient(0.5turn, #FAFAFC, #F1F0F7, #ffffff);';
+  function update() {
+    // reset the tick so we can
+    // capture the next onScroll
+    ticking = false;
+    let variabletoAnimateScroll = (latestKnownScrollY).toFixed(0);
+    let body = document.body, html = document.documentElement;
+    let variableInfoPageHeight = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+    let VariableToAnimateBasedOnHeight = ((variabletoAnimateScroll / variableInfoPageHeight.toFixed(0) * 100).toFixed(0));
+    // console.log(window.pageYOffset);
 
-}
-else if(latestKnownScrollY.toFixed(0)>4800){
-  // latestKnownScrollY/10-490
-  item[0].style='background-image:url('+sciezka +'frame_'+ (latestKnownScrollY/10-490).toFixed(0)+'.png),linear-gradient(0.5turn, #FAFAFC, #F1F0F7, #ffffff);';
+    //if page scrolled execute
+    if (VariableToAnimateBasedOnHeight < 73) {
+      item[0].style = 'background-image:url(' + sciezka + 'frame_1.png),linear-gradient(0.5turn, #FAFAFC, #F1F0F7, #ffffff);';
 
 
-}
-else{
-  item[0].style='background-image:url('+sciezka + 'frame_34.png),linear-gradient(0.5turn, #FAFAFC, #F1F0F7, #ffffff);';
-   
-}
-}
-function onScroll() {
-	latestKnownScrollY = window.scrollY; //No IE8
-	requestTick();
-}
+    }
+    else if (VariableToAnimateBasedOnHeight > 74) {
 
-function requestTick() {
-	if(!ticking) {
-		requestAnimationFrame(update);
-	}
-	ticking = true;
-}
+      item[0].style = 'background-image:url(' + sciezka + 'frame_' + ((VariableToAnimateBasedOnHeight-70)*2).toFixed(0) + '.png),linear-gradient(0.5turn, #FAFAFC, #F1F0F7, #ffffff);';
+      // console.log();
+    }
+    else {
+      item[0].style = 'background-image:url(' + sciezka + 'frame_34.png),linear-gradient(0.5turn, #FAFAFC, #F1F0F7, #ffffff);';
 
- window.addEventListener('scroll', onScroll, false);
+    }
+  }
+  function onScroll() {
+    latestKnownScrollY = window.scrollY; //No IE8
+    requestTick();
+  }
+
+  function requestTick() {
+    if (!ticking) {
+      requestAnimationFrame(update);
+    }
+    ticking = true;
+  }
+
+  window.addEventListener('scroll', onScroll, false);
 
 
 }
