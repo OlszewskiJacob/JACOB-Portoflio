@@ -34,6 +34,17 @@ html {
   }
 }
 
+.reveal {
+  transition: 800ms;
+  opacity: 0;
+  transform: translate(0px, 620px);
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translate(0px);
+}
+
 .light {
   font-weight: 300;
 }

@@ -2,13 +2,35 @@
 function WorkingOnItAlert() {
   alert("SORRY BUT THIS SECTION IS NOT READY!");
 }
-// function onload & preloader
+// function onload 
 window.addEventListener("load", (event) => {
   ScrollFooterBackgroundAnimation();
   document.getElementById('preloader').style.display = "none";
   document.getElementById('pageContainerIds').style = "overflow:none;";
-
 });
+
+
+
+//loading page element on scroll
+
+ window.addEventListener('scroll', reveal);
+
+ function reveal() {
+   let reveals = document.querySelectorAll('.reveal');
+ 
+   for (let i = 0; i < reveals.length; i++) {
+     let windowheight = window.innerHeight;
+     let revealtop = reveals[i].getBoundingClientRect().top;
+     let revealpoint = 80;
+     if (revealtop < windowheight - revealpoint) {
+       reveals[i].classList.add('active');
+     }
+     else {
+       reveals[i].classList.remove('active');
+     }
+   }
+ }
+ 
 
 //slider: portfolio
 let slideIndex = 1;
@@ -105,11 +127,11 @@ function ScrollFooterBackgroundAnimation() {
     item = document.querySelectorAll('.Lets-talk-sec');
 
 
-    //Size of the page on plus or minus
-    // window.addEventListener('resize', () => {
-    //   let browserZoomLevel = Math.round(window.devicePixelRatio * 100);
-    //   // console.log(browserZoomLevel)
-    // })
+  //Size of the page on plus or minus
+  // window.addEventListener('resize', () => {
+  //   let browserZoomLevel = Math.round(window.devicePixelRatio * 100);
+  //   // console.log(browserZoomLevel)
+  // })
 
 
   function update() {
@@ -126,12 +148,12 @@ function ScrollFooterBackgroundAnimation() {
     // console.log(window.pageYOffset);
 
     //if page scrolled execute
-    if (VariableToAnimateBasedOnHeight < 75 && browserZoomLevel>90 && browserZoomLevel<150) {
+    if (VariableToAnimateBasedOnHeight < 75 && browserZoomLevel > 90 && browserZoomLevel < 150) {
       item[0].style = 'background-image:url(' + sciezka + 'frame_1.png),linear-gradient(0.5turn, #FAFAFC, #F1F0F7, #ffffff);';
 
 
     }
-    else if (VariableToAnimateBasedOnHeight > 76 && browserZoomLevel>90 && browserZoomLevel<150) {
+    else if (VariableToAnimateBasedOnHeight > 76 && browserZoomLevel > 90 && browserZoomLevel < 150) {
 
       item[0].style = 'background-image:url(' + sciezka + 'frame_' + ((VariableToAnimateBasedOnHeightTimeTwo - 225)).toFixed(0) + '.png),linear-gradient(0.5turn, #FAFAFC, #F1F0F7, #ffffff);';
     }

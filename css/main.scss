@@ -37,6 +37,18 @@ html {
     }
 }
 
+.reveal {
+    transition: 800ms;
+    opacity: 0.0;
+    transform: translate(0px, 620px);
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translate(0px);
+
+}
+
 .light {
     font-weight: 300;
 }
@@ -48,10 +60,12 @@ html {
 .semibold {
     font-weight: 600;
 }
-#pageContainerId{
+
+#pageContainerId {
     overflow: hidden;
-    
+
 }
+
 .page-container {
     background-color: #fff;
     width: 100vw;
