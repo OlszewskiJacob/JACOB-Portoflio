@@ -6,30 +6,31 @@ function WorkingOnItAlert() {
 // function onload 
 window.addEventListener("load", (event) => {
   ScrollFooterBackgroundAnimation();
-  //watch preloader
-  function FunctionTiming() {
-    return new Promise((resolve, reject) => {
-      let y = 0
-      setTimeout(() => {
-        for (i = 0; i < 2; i++) {
-          y++
-        }
-        document.getElementById('pageContainerIds').style = "overflow:none;";
-        document.getElementById('preloader').style.display = "none";
-        resolve(y)
-      }, 2000)
-    })
-  }
-
-
-  async function secondFunctionTiming() {
-    const result = await FunctionTiming()
-  };
-
-  secondFunctionTiming()
-
+  document.getElementById('pageContainerIds').style = "overflow:none;";
+  document.getElementById('preloader').style.display = "none";
 });
 
+//watch preloader
+// function FunctionTiming() {
+//   return new Promise((resolve, reject) => {
+//     let y = 0
+//     setTimeout(() => {
+//       for (i = 0; i < 2; i++) {
+//         y++
+//       }
+//       document.getElementById('pageContainerIds').style = "overflow:none;";
+//       document.getElementById('preloader').style.display = "none";
+//       resolve(y)
+//     }, 2000)
+//   })
+// }
+
+
+// async function secondFunctionTiming() {
+//   const result = await FunctionTiming()
+// };
+
+// secondFunctionTiming()
 
 
 //loading page element on scroll

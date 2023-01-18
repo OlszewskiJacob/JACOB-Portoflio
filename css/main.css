@@ -282,8 +282,8 @@ header .ul-Contact:active {
   padding: 11em 0em 8em 0em;
   border-top-left-radius: 0% 0%;
   border-top-right-radius: 0% 0%;
-  border-bottom-right-radius: 15% 15%;
-  border-bottom-left-radius: 15% 15%;
+  border-bottom-right-radius: 8% 8%;
+  border-bottom-left-radius: 8% 8%;
 }
 @media only screen and (max-width: 600px) and (min-width: 0px) {
   .Home {
@@ -484,6 +484,9 @@ header .ul-Contact:active {
 .Skills {
   background-color: #fff;
   padding: 10em 0em 10em 0em;
+  background-image: url(/images/skills/back-skills.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .Skills img {
   width: 44px;
@@ -735,6 +738,10 @@ header .ul-Contact:active {
   padding: 12em 0em 28em 0em;
   width: auto;
   background-color: #F1F5FF;
+  border-top-left-radius: 15% 15%;
+  border-top-right-radius: 15% 0%;
+  border-bottom-right-radius: 15% 15%;
+  border-bottom-left-radius: 15% 0%;
 }
 @media only screen and (max-width: 600px) and (min-width: 0px) {
   .about-me {
