@@ -441,7 +441,8 @@ header {
 
 #button-color-one {
     background-color: #F0F3F6;
-    color: #1c273188;
+     color: #2986FF;
+    // color: #1c273188;
 }
 
 #button-color-two {
@@ -720,7 +721,7 @@ header {
 .about-me {
     text-align: center;
     list-style-type: none;
-    padding: 12em 0em 28em 0em;
+    padding: 20em 0em 22em 0em;
     width: auto;
     background-color: #F1F5FF;
     border-top-left-radius: 15% 15%;
@@ -742,11 +743,16 @@ header {
 .about-me-copy-container,
 .about-me-photos {
     display: inline-block;
+    width:auto;
+    top:0;
+    left:0;
+    position: relative;
+    margin: auto;
 }
 
 .person-one,
 .person-two {
-    padding:10em 0em 0em 18em;
+    padding:15em 0em 0em 18em;
     display: inline-block;
 }
 
@@ -754,7 +760,7 @@ header {
     width: 600px;
     text-align: left;
     right: 0;
-    top: 0;
+    top: 0px;
     margin: auto;
     display: inline-block;
 
@@ -775,7 +781,7 @@ header {
         top: 0;
         left: 0;
         margin: auto;
-        width: 600px;
+        width: 450px;
         font-size: 42px;
         font-weight: 100;
         line-height: 40px;
@@ -790,7 +796,7 @@ header {
         top: 20px;
         left: 0;
         margin: auto;
-        width: 600px;
+        width: 450px;
         font-size: 18px;
 
         @media only screen and (max-width: 600px) and (min-width: 0px) {
