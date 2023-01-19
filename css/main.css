@@ -15,24 +15,6 @@ html {
   position: absolute;
   font-family: "Open Sans";
 }
-@media only screen and (max-width: 600px) and (min-width: 0px) {
-  body,
-html {
-    position: absolute;
-    width: auto;
-    height: 100vh;
-    left: 0;
-    top: 0;
-    margin: auto;
-    padding: 0;
-    overflow-x: hidden;
-    -webkit-overflow-scrolling-x: none;
-    overscroll-behavior-x: none;
-    background-size: 100vw;
-    background-repeat: no-repeat;
-    background-image: url("/images/error/error.jpg");
-  }
-}
 
 .reveal {
   transition: 800ms;
@@ -485,7 +467,8 @@ header .ul-Contact:active {
   background-color: #fff;
   padding: 10em 0em 10em 0em;
   background-image: url(/images/skills/back-skills.png);
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }
 .Skills img {
@@ -522,7 +505,7 @@ header .ul-Contact:active {
   line-height: 2px;
   color: #3D3D3D;
   font: normal 18px Open Sans;
-  width: 35%;
+  width: 40%;
 }
 @media only screen and (max-width: 600px) and (min-width: 0px) {
   .skills-descryption {
@@ -535,7 +518,7 @@ header .ul-Contact:active {
 
 .skills-container {
   display: inline-flex;
-  padding: 6em 0em 0em 0em;
+  padding: 4em 0em 0em 0em;
 }
 @media only screen and (max-width: 600px) and (min-width: 0px) {
   .skills-container {
@@ -550,7 +533,7 @@ header .ul-Contact:active {
 
 .skills-container-two {
   display: inline-flex;
-  padding: 0em 0em 0em 0em;
+  padding: 1em 0em 0em 0em;
 }
 @media only screen and (max-width: 600px) and (min-width: 0px) {
   .skills-container-two {
@@ -579,8 +562,7 @@ header .ul-Contact:active {
 }
 
 .Skill-one-descryption,
-.Skill-three-descryption,
-.Skill-six-descryption {
+.Skill-three-descryption {
   padding: 0em 0em 2em 0em;
 }
 
@@ -591,7 +573,8 @@ header .ul-Contact:active {
 
 .Skill-four-descryption,
 .Skill-eight-descryption,
-.Skill-seven-descryption {
+.Skill-seven-descryption,
+.Skill-six-descryption {
   padding: 0em 0em 1em 0em;
 }
 
@@ -758,12 +741,19 @@ header .ul-Contact:active {
   display: inline-block;
 }
 
+.person-one,
+.person-two {
+  padding: 10em 0em 0em 18em;
+  display: inline-block;
+}
+
 .about-me-photos {
   width: 600px;
   text-align: left;
   right: 0;
   top: 0;
   margin: auto;
+  display: inline-block;
 }
 @media only screen and (max-width: 600px) and (min-width: 0px) {
   .about-me-photos {
@@ -808,81 +798,48 @@ header .ul-Contact:active {
   }
 }
 
-#gif-person-one img,
-#stat-person-one img,
-#gif-person-two img,
-#stat-person-two img,
-#gif-person-three img,
-#stat-person-three img,
-#gif-person-four img,
-#stat-person-four img {
+.person-one {
+  position: relative;
+  top: 0;
+  right: 0;
+}
+.person-one #InsidePersonAbsoluteOne {
+  transition: steps(49) 200ms;
+  background-position-x: 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 270px;
+  height: 270px;
   position: absolute;
-  width: 260px;
-  height: 260px;
+  top: 0;
+  right: 0;
+  background-image: url("/images/about-me/sequenceWomen.png");
 }
 
-.person-one {
-  padding: 0em 0em 0em 20em;
+.person-one:hover #InsidePersonAbsoluteOne {
+  background-position-x: -13230px;
 }
 
 .person-two {
-  padding: 4em 10em 0em 0em;
+  position: relative;
+  top: 0;
+  right: 0;
+}
+.person-two #InsidePersonAbsoluteTwo {
+  transition: steps(49) 200ms;
+  background-position-x: 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 270px;
+  height: 270px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: url("/images/about-me/sequenceBoy.png");
 }
 
-.person-three {
-  padding: 14em 0em 0em 20em;
-}
-
-.person-four {
-  padding: 4em 10em 0em 0em;
-}
-
-.imageOneGif {
-  opacity: 0;
-}
-
-.imageTwoGif {
-  opacity: 0;
-}
-
-.imageThreeGif {
-  opacity: 0;
-}
-
-.imageFourGif {
-  opacity: 0;
-}
-
-.imageOne:hover {
-  opacity: 0;
-}
-
-.imageOneGif:hover {
-  opacity: 1;
-}
-
-.imageTwo:hover {
-  opacity: 0;
-}
-
-.imageTwoGif:hover {
-  opacity: 1;
-}
-
-.imageThree:hover {
-  opacity: 0;
-}
-
-.imageThreeGif:hover {
-  opacity: 1;
-}
-
-.imageFour:hover {
-  opacity: 0;
-}
-
-.imageFourGif:hover {
-  opacity: 1;
+.person-two:hover #InsidePersonAbsoluteTwo {
+  background-position-x: -13230px;
 }
 
 .Portfolio-showcase {
@@ -1241,4 +1198,27 @@ header .ul-Contact:active {
   width: 100vw;
   position: fixed;
   z-index: 10000;
+}
+#preloader #copyPreloaderMobile {
+  position: relative;
+  top: 11%;
+  left: 0;
+  margin: auto;
+  color: #fff;
+  font-weight: bold;
+  font-size: 42px;
+  width: 50vw;
+  height: 100vh;
+  text-align: center;
+  opacity: 0;
+}
+@media only screen and (max-width: 600px) and (min-width: 0px) {
+  #preloader {
+    display: block !important;
+    background-position: center bottom !important;
+  }
+  #preloader #copyPreloaderMobile {
+    opacity: 1;
+    display: block;
+  }
 }/*# sourceMappingURL=main.css.map */

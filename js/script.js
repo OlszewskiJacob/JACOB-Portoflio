@@ -8,7 +8,21 @@ window.addEventListener("load", (event) => {
   ScrollFooterBackgroundAnimation();
   document.getElementById('pageContainerIds').style = "overflow:none;";
   document.getElementById('preloader').style.display = "none";
-});
+  //onload scroll me top
+  
+  //reload page
+  if ('performance' in window) {
+    const navigationLastEntry = performance.getEntriesByType('navigation').pop();
+    if (navigationLastEntry
+        && navigationLastEntry.type === 'back_forward'
+        && navigationLastEntry.unloadEventStart === 0) {
+      window.location.reload(true);
+      window.scroll(0,findPosition(document.getElementById("Home-Call")));
+    }
+  }
+  });
+
+
 
 //watch preloader
 // function FunctionTiming() {

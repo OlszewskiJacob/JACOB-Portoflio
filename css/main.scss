@@ -12,29 +12,32 @@ html {
     top: 0%;
     margin: auto;
     padding: 0;
-    // width: 100vw;
     width: 1920px;
     height: auto;
-    // height: 56.25vw;
     position: absolute;
     font-family: 'Open Sans';
 
-    @media only screen and (max-width: 600px) and (min-width: 0px) {
-        position: absolute;
-        width: auto;
-        height: 100vh;
-        left: 0;
-        top: 0;
-        margin: auto;
-        padding: 0;
-        overflow-x: hidden;
-        -webkit-overflow-scrolling-x: none;
-        overscroll-behavior-x: none;
-        background-size: 100vw;
-        background-repeat: no-repeat;
-        background-image: url('/images/error/error.jpg');
+    // @media only screen and (max-width: 600px) and (min-width: 0px) {
+    //     left: 0;
+    //     top: 0;
+    //     margin: auto;
+    //     padding: 0;
+    //     overflow-x: hidden;
+    //     -webkit-overflow-scrolling-x: none;
+    //     overscroll-behavior-x: none;
+    //     overflow: hidden;
+    //     background: #2986FF;
+    //     text-align: center;
+    //     background-image: url(/images/loader/Preloader.gif);
+    //     background-size: contain;
+    //     background-repeat: no-repeat;
+    //     background-position: center;
+    //     height: 100vh;
+    //     width: 100vw;
+    //     position: fixed;
+    //     z-index: 10000;
 
-    }
+    // }
 }
 
 .reveal {
@@ -316,7 +319,7 @@ header {
     border-top-right-radius: 0% 0%;
     border-bottom-right-radius: 8% 8%;
     border-bottom-left-radius: 8% 8%;
-  
+
 
     @media only screen and (max-width: 600px) and (min-width: 0px) {
         background-position: bottom 0px left 0px;
@@ -515,7 +518,8 @@ header {
     background-color: #fff;
     padding: 10em 0em 10em 0em;
     background-image: url(/images/skills/back-skills.png);
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
 
     img {
@@ -555,7 +559,7 @@ header {
     line-height: 2px;
     color: #3D3D3D;
     font: normal 18px Open Sans;
-    width: 35%;
+    width: 40%;
 
     @media only screen and (max-width: 600px) and (min-width: 0px) {
         top: 0;
@@ -567,7 +571,7 @@ header {
 
 .skills-container {
     display: inline-flex;
-    padding: 6em 0em 0em 0em;
+    padding: 4em 0em 0em 0em;
 
     @media only screen and (max-width: 600px) and (min-width: 0px) {
         display: grid;
@@ -590,7 +594,7 @@ header {
 // ---------------------------------------CONTAINER
 .skills-container-two {
     display: inline-flex;
-    padding: 0em 0em 0em 0em;
+    padding: 1em 0em 0em 0em;
 
     @media only screen and (max-width: 600px) and (min-width: 0px) {
 
@@ -620,8 +624,7 @@ header {
 }
 
 .Skill-one-descryption,
-.Skill-three-descryption,
-.Skill-six-descryption {
+.Skill-three-descryption {
     padding: 0em 0em 2em 0em;
 }
 
@@ -632,7 +635,8 @@ header {
 
 .Skill-four-descryption,
 .Skill-eight-descryption,
-.Skill-seven-descryption {
+.Skill-seven-descryption,
+.Skill-six-descryption {
     padding: 0em 0em 1em 0em;
 }
 
@@ -740,12 +744,19 @@ header {
     display: inline-block;
 }
 
+.person-one,
+.person-two {
+    padding:10em 0em 0em 18em;
+    display: inline-block;
+}
+
 .about-me-photos {
     width: 600px;
     text-align: left;
     right: 0;
     top: 0;
     margin: auto;
+    display: inline-block;
 
     @media only screen and (max-width: 600px) and (min-width: 0px) {
         display: none;
@@ -789,84 +800,67 @@ header {
     }
 }
 
-#gif-person-one,
-#stat-person-one,
-#gif-person-two,
-#stat-person-two,
-#gif-person-three,
-#stat-person-three,
-#gif-person-four,
-#stat-person-four {
-    img {
+
+
+.person-one {
+    // padding: 0em 0em 0em 20em;
+    position: relative;
+    top: 0;
+    right: 0;
+    // transform-origin: 50% -50%;
+
+    #InsidePersonAbsoluteOne {
+        transition: steps(49) 200ms;
+        background-position-x: 0px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        // orignal size 540
+        width: 270px;
+        height: 270px;
         position: absolute;
-        width: 260px;
-        height: 260px;
+        top: 0;
+        right: 0;
+        background-image: url('/images/about-me/sequenceWomen.png');
     }
 }
 
-.person-one {
-    padding: 0em 0em 0em 20em;
+.person-one:hover {
+    #InsidePersonAbsoluteOne {
+        background-position-x: -13230px;
+    }
+
+    //original size -26460px
 }
 
 .person-two {
-    padding: 4em 10em 0em 0em;
+    position: relative;
+    top: 0;
+    right: 0;
+    // transform-origin: 50% -50%;
+
+    #InsidePersonAbsoluteTwo {
+        transition: steps(49) 200ms;
+        background-position-x: 0px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        // orignal size 540
+        width: 270px;
+        height: 270px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-image: url('/images/about-me/sequenceBoy.png');
+    }
 }
 
-.person-three {
-    padding: 14em 0em 0em 20em;
+.person-two:hover {
+    #InsidePersonAbsoluteTwo {
+        background-position-x: -13230px;
+    }
 }
 
-.person-four {
-    padding: 4em 10em 0em 0em;
-}
 
-.imageOneGif {
-    opacity: 0;
-}
 
-.imageTwoGif {
-    opacity: 0;
-}
-
-.imageThreeGif {
-    opacity: 0;
-}
-
-.imageFourGif {
-    opacity: 0;
-}
-
-.imageOne:hover {
-    opacity: 0;
-}
-
-.imageOneGif:hover {
-    opacity: 1;
-}
-
-.imageTwo:hover {
-    opacity: 0;
-}
-
-.imageTwoGif:hover {
-    opacity: 1;
-}
-
-.imageThree:hover {
-    opacity: 0;
-}
-
-.imageThreeGif:hover {
-    opacity: 1;
-}
-
-.imageFour:hover {
-    opacity: 0;
-}
-
-.imageFourGif:hover {
-    opacity: 1;
-}
 
 //-------------------------------PORTFOLIO SHOWCASE
 //-------------------------------PORTFOLIO SHOWCASE
@@ -1294,6 +1288,31 @@ header {
     width: 100vw;
     position: fixed;
     z-index: 10000;
+
+
+    #copyPreloaderMobile {
+        position: relative;
+        top: 11%;
+        left: 0;
+        margin: auto;
+        color: #fff;
+        font-weight: bold;
+        font-size: 42px;
+        width: 50vw;
+        height: 100vh;
+        text-align: center;
+        opacity: 0.0;
+    }
+
+    @media only screen and (max-width: 600px) and (min-width: 0px) {
+        display: block !important;
+        background-position: center bottom !important;
+
+        #copyPreloaderMobile {
+            opacity: 1.0;
+            display: block;
+        }
+    }
 }
 
 // .imageSection {
