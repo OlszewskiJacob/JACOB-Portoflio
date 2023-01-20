@@ -6,32 +6,43 @@ function WorkingOnItAlert() {
 // function onload 
 window.addEventListener("load", (event) => {
 
-//reload page cache
-// let versionUpdate = (new Date()).getTime();  
-// let script = document.createElement("script");  
-// script.type = "text/javascript";  
-// script.src = "/js/script.js" + versionUpdate;  
-// document.body.appendChild(script);  
+  //reload page cache
+  // let versionUpdate = (new Date()).getTime();  
+  // let script = document.createElement("script");  
+  // script.type = "text/javascript";  
+  // script.src = "/js/script.js" + versionUpdate;  
+  // document.body.appendChild(script);  
 
 
 
 
   ScrollFooterBackgroundAnimation();
   document.getElementById('pageContainerIds').style = "overflow:none;";
+
+  //wait and show prelader
+  function wait(ms) {
+    let startTime = new Date().getTime();
+    let endTime = startTime;
+    while (endTime < startTime + ms) {
+      endTime = new Date().getTime();
+    }
+  }
+  wait(1500);
   document.getElementById('preloader').style.display = "none";
-  //onload scroll me top
-  
+
+
+
   //reload page
   if ('performance' in window) {
     const navigationLastEntry = performance.getEntriesByType('navigation').pop();
     if (navigationLastEntry
-        && navigationLastEntry.type === 'back_forward'
-        && navigationLastEntry.unloadEventStart === 0) {
+      && navigationLastEntry.type === 'back_forward'
+      && navigationLastEntry.unloadEventStart === 0) {
       window.location.reload(true);
-      window.scroll(0,findPosition(document.getElementById("Home-Call")));
+      window.scroll(0, findPosition(document.getElementById("Home-Call")));
     }
   }
-  });
+});
 
 
 
