@@ -1,8 +1,26 @@
 @font-face {
   font-family: "Open Sans";
   src: url(/font/OpenSans-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sans";
   src: url(/font/OpenSans-Bold.ttf);
+  font-weight: Bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sans";
   src: url(/font/OpenSans-Medium.ttf);
+  font-weight: Medium;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url(/font//OpenSans-SemiBold.ttf);
+  font-weight: 600;
+  font-style: normal;
 }
 body,
 html {
@@ -255,7 +273,6 @@ header .ul-Contact:active {
 }
 
 .Home {
-  transition: 0ms;
   text-align: center;
   background-image: url("/images/Home/HomeImage-1.png"), linear-gradient(0.5turn, #C0D9F8, #C0D9F8, #E0EFFA);
   background-position: bottom -80px left 0px;
@@ -351,6 +368,7 @@ header .ul-Contact:active {
   font-size: 20px;
   letter-spacing: 0.7px;
   width: 600px;
+  font-weight: 600;
 }
 @media only screen and (max-width: 600px) and (min-width: 0px) {
   .meet {
@@ -418,7 +436,7 @@ header .ul-Contact:active {
 
 .content {
   text-align: left;
-  padding: 10em 0em 0em 0em;
+  padding: 12em 0em 0em 0em;
   margin-left: auto;
   left: 0;
   top: 0;
@@ -598,6 +616,7 @@ header .ul-Contact:active {
   border-radius: 10px;
   opacity: 0.33;
   transition: 220ms linear;
+  background-color: #fff;
 }
 
 .button-skill-read-more {
@@ -746,9 +765,13 @@ header .ul-Contact:active {
   margin: auto;
 }
 
-.person-one,
+.person-one {
+  padding: 20em 0em 0em 40em;
+  display: inline-block;
+}
+
 .person-two {
-  padding: 15em 0em 0em 18em;
+  padding: 0em 0em 0em 0em;
   display: inline-block;
 }
 
@@ -809,20 +832,14 @@ header .ul-Contact:active {
   right: 0;
 }
 .person-one #InsidePersonAbsoluteOne {
-  transition: steps(49) 200ms;
-  background-position-x: 0px;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 270px;
-  height: 270px;
+  width: 504.5px;
+  height: 464px;
   position: absolute;
   top: 0;
   right: 0;
-  background-image: url("/images/about-me/sequenceWomen.png");
-}
-
-.person-one:hover #InsidePersonAbsoluteOne {
-  background-position-x: -13230px;
+  background-image: url("/images/about-me/AboutMe.png");
 }
 
 .person-two {
@@ -831,20 +848,30 @@ header .ul-Contact:active {
   right: 0;
 }
 .person-two #InsidePersonAbsoluteTwo {
-  transition: steps(49) 200ms;
-  background-position-x: 0px;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 270px;
-  height: 270px;
+  width: 320px;
+  height: 320px;
   position: absolute;
   top: 0;
-  right: 0;
-  background-image: url("/images/about-me/sequenceBoy.png");
+  right: 495px;
+  background-image: url("/images/about-me/AboutMe3D.png");
 }
 
-.person-two:hover #InsidePersonAbsoluteTwo {
-  background-position-x: -13230px;
+.person-three {
+  position: relative;
+  top: 0;
+  right: 0;
+}
+.person-three #InsidePersonAbsoluteThree {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 280px;
+  height: 280px;
+  position: absolute;
+  bottom: 90px;
+  left: 495px;
+  background-image: url("/images/about-me/AboutMe3D-2.png");
 }
 
 .Portfolio-showcase {
@@ -884,7 +911,7 @@ header .ul-Contact:active {
   font-size: 18px;
   color: #3D3D3D;
   padding: 0em 0em 4em 0em;
-  font-size: 16px;
+  font-size: 18px;
   width: 600px;
   top: 0;
   left: 0;
@@ -1071,7 +1098,7 @@ header .ul-Contact:active {
 }
 
 .header-contact-class p {
-  line-height: 0px;
+  margin: auto;
   font-weight: bold;
   color: #fff;
 }
@@ -1079,6 +1106,8 @@ header .ul-Contact:active {
 .first-paragraph {
   font-size: 80px;
   text-align: left;
+  line-height: 122px;
+  width: 420px;
 }
 @media only screen and (max-width: 600px) and (min-width: 0px) {
   .first-paragraph {
@@ -1087,28 +1116,35 @@ header .ul-Contact:active {
   }
 }
 
-.second-paragraph {
-  font-size: 142px;
-  text-align: left;
-}
-@media only screen and (max-width: 600px) and (min-width: 0px) {
-  .second-paragraph {
-    font-size: 52px;
-    text-align: center;
-  }
-}
-
 .contact-copy {
   color: #fff;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 100;
   text-align: left;
+  width: 420px;
 }
 @media only screen and (max-width: 600px) and (min-width: 0px) {
   .contact-copy {
     font-size: 14px;
     text-align: center;
   }
+}
+
+.firstSpanClass {
+  transition: 800ms;
+  opacity: 0.5;
+  font-weight: bold;
+}
+
+.secondSpanClass {
+  transition: 800ms;
+}
+
+.contact-copy:hover .secondSpanClass {
+  opacity: 0.5;
+}
+.contact-copy:hover .firstSpanClass {
+  opacity: 1 !important;
 }
 
 .Lets-talk-sec {
@@ -1142,8 +1178,8 @@ header .ul-Contact:active {
 }
 .Lets-talk-sec .talk-copy {
   margin: auto;
-  font-size: 16px;
-  width: 18%;
+  font-size: 18px;
+  width: 400px;
 }
 @media only screen and (max-width: 600px) and (min-width: 0px) {
   .Lets-talk-sec .talk-copy {

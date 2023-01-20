@@ -1,9 +1,31 @@
 @font-face {
     font-family: "Open Sans";
     src: url(/font/OpenSans-Regular.ttf);
-    src: url(/font/OpenSans-Bold.ttf);
-    src: url(/font/OpenSans-Medium.ttf);
+    font-weight: normal;
+    font-style: normal;
 }
+
+@font-face {
+    font-family: "Open Sans";
+    src: url(/font/OpenSans-Bold.ttf);
+    font-weight: Bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url(/font/OpenSans-Medium.ttf);
+    font-weight: Medium;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url(/font//OpenSans-SemiBold.ttf);
+    font-weight: 600;
+    font-style: normal;
+}
+
 
 body,
 html {
@@ -308,7 +330,6 @@ header {
 
 
 .Home {
-    transition: 0ms;
     text-align: center;
     background-image: url('/images/Home/HomeImage-1.png'), linear-gradient(0.5turn, #C0D9F8, #C0D9F8, #E0EFFA);
     background-position: bottom -80px left 0px;
@@ -391,6 +412,7 @@ header {
     font-size: 20px;
     letter-spacing: 0.7px;
     width: 600px;
+    font-weight: 600;
 
     @media only screen and (max-width: 600px) and (min-width: 0px) {
         font-size: 14px;
@@ -441,7 +463,7 @@ header {
 
 #button-color-one {
     background-color: #F0F3F6;
-     color: #2986FF;
+    color: #2986FF;
     // color: #1c273188;
 }
 
@@ -460,7 +482,7 @@ header {
 
 .content {
     text-align: left;
-    padding: 10em 0em 0em 0em;
+    padding: 12em 0em 0em 0em;
     margin-left: auto;
     left: 0;
     top: 0;
@@ -661,6 +683,7 @@ header {
     border-radius: 10px;
     opacity: 0.33;
     transition: 220ms linear;
+    background-color: #fff;
 }
 
 .button-skill-read-more {
@@ -724,6 +747,7 @@ header {
     padding: 20em 0em 22em 0em;
     width: auto;
     background-color: #F1F5FF;
+    //#ededed
     border-top-left-radius: 15% 15%;
     border-top-right-radius: 15% 0%;
     border-bottom-right-radius: 15% 15%;
@@ -743,16 +767,20 @@ header {
 .about-me-copy-container,
 .about-me-photos {
     display: inline-block;
-    width:auto;
-    top:0;
-    left:0;
+    width: auto;
+    top: 0;
+    left: 0;
     position: relative;
     margin: auto;
 }
 
-.person-one,
+.person-one {
+    padding: 20em 0em 0em 40em;
+    display: inline-block;
+}
+
 .person-two {
-    padding:15em 0em 0em 18em;
+    padding: 0em 0em 0em 0em;
     display: inline-block;
 }
 
@@ -816,27 +844,19 @@ header {
     // transform-origin: 50% -50%;
 
     #InsidePersonAbsoluteOne {
-        transition: steps(49) 200ms;
-        background-position-x: 0px;
+
         background-size: cover;
         background-repeat: no-repeat;
         // orignal size 540
-        width: 270px;
-        height: 270px;
+        width: 504.5px;
+        height: 464px;
         position: absolute;
         top: 0;
         right: 0;
-        background-image: url('/images/about-me/sequenceWomen.png');
+        background-image: url('/images/about-me/AboutMe.png');
     }
 }
 
-.person-one:hover {
-    #InsidePersonAbsoluteOne {
-        background-position-x: -13230px;
-    }
-
-    //original size -26460px
-}
 
 .person-two {
     position: relative;
@@ -845,23 +865,34 @@ header {
     // transform-origin: 50% -50%;
 
     #InsidePersonAbsoluteTwo {
-        transition: steps(49) 200ms;
-        background-position-x: 0px;
         background-size: cover;
         background-repeat: no-repeat;
         // orignal size 540
-        width: 270px;
-        height: 270px;
+        width: 320px;
+        height: 320px;
         position: absolute;
         top: 0;
-        right: 0;
-        background-image: url('/images/about-me/sequenceBoy.png');
+        right: 495px;
+        background-image: url('/images/about-me/AboutMe3D.png');
     }
 }
 
-.person-two:hover {
-    #InsidePersonAbsoluteTwo {
-        background-position-x: -13230px;
+.person-three {
+    position: relative;
+    top: 0;
+    right: 0;
+    // transform-origin: 50% -50%;
+
+    #InsidePersonAbsoluteThree {
+        background-size: cover;
+        background-repeat: no-repeat;
+        // orignal size 540
+        width: 280px;
+        height: 280px;
+        position: absolute;
+        bottom: 90px;
+        left: 495px;
+        background-image: url('/images/about-me/AboutMe3D-2.png');
     }
 }
 
@@ -916,7 +947,7 @@ header {
     font-size: 18px;
     color: #3D3D3D;
     padding: 0em 0em 4em 0em;
-    font-size: 16px;
+    font-size: 18px;
     width: 600px;
     top: 0;
     left: 0;
@@ -1041,44 +1072,6 @@ header {
     display: block;
 }
 
-// .portfolio-block-first,
-// .portfolio-block-second,
-// .portfolio-block-third,
-// .portfolio-block-fourth {
-//     align-items: center;
-//     display: inline-block;
-//     margin: auto;
-// }
-
-// .portfolio-block-first {
-//     width: 548px;
-//     height: 451px;
-//     border-radius: 20px;
-//     background: #2986FF 0% 0% no-repeat padding-box;
-//     box-shadow: 12px 12px 30px #00000029;
-// }
-
-// .portfolio-block-second,
-// .portfolio-block-third,
-// .portfolio-block-fourth {
-//     background: #2986FF 0% 0% no-repeat padding-box;
-//     box-shadow: 12px 12px 30px #00000029;
-//     border-radius: 20px;
-//     width: 218px;
-//     height: 304px;
-//     transition: 150ms linear;
-// }
-
-// .portfolio-block-first:active,
-// .portfolio-block-second:active,
-// .portfolio-block-third:active,
-// .portfolio-block-fourth:active {
-//     box-shadow: 12px 12px 30px #00000029;
-//     border-radius: 20px;
-//     width: 548px;
-//     height: 451px;
-// }
-
 //----------------------CONTACT----------------------
 //----------------------CONTACT----------------------
 //----------------------CONTACT----------------------
@@ -1155,7 +1148,8 @@ header {
 
 .header-contact-class {
     p {
-        line-height: 0px;
+        // line-height: 0px;
+        margin: auto;
         font-weight: bold;
         color: #fff;
     }
@@ -1165,6 +1159,10 @@ header {
 .first-paragraph {
     font-size: 80px;
     text-align: left;
+    line-height: 122px;
+    width: 420px;
+
+
 
     @media only screen and (max-width: 600px) and (min-width: 0px) {
         font-size: 32px;
@@ -1172,25 +1170,41 @@ header {
     }
 }
 
-.second-paragraph {
-    font-size: 142px;
-    text-align: left;
 
-    @media only screen and (max-width: 600px) and (min-width: 0px) {
-        font-size: 52px;
-        text-align: center;
-    }
-}
 
 .contact-copy {
     color: #fff;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 100;
     text-align: left;
+    width: 420px;
+
 
     @media only screen and (max-width: 600px) and (min-width: 0px) {
         font-size: 14px;
         text-align: center;
+    }
+}
+
+.firstSpanClass {
+    transition: 800ms;
+    opacity: 0.5;
+    font-weight: bold;
+}
+
+.secondSpanClass {
+    transition: 800ms;
+
+}
+
+.contact-copy:hover {
+    .secondSpanClass {
+        opacity: 0.5;
+    }
+
+    .firstSpanClass {
+
+        opacity: 1.0 !important;
     }
 }
 
@@ -1234,8 +1248,8 @@ header {
 
     .talk-copy {
         margin: auto;
-        font-size: 16px;
-        width: 18%;
+        font-size: 18px;
+        width: 400px;
 
         @media only screen and (max-width: 600px) and (min-width: 0px) {
             font-size: 14px;
