@@ -162,6 +162,7 @@ function AnimHeader() {
   //collect mouse information
   window.addEventListener("mousemove", (e) => {
     let xPos = e.clientX / 38.4;
+    console.log(e.clientX);
     if (xPos > 50) {
       xPos = 50;
     }
