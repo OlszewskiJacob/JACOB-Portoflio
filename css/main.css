@@ -126,6 +126,11 @@ header {
   justify-content: space-between;
   padding: 0em 18em 0em 20em;
 }
+@media only screen and (max-width: 1400px) and (min-width: 600px) {
+  header {
+    padding: 0em 10em 0em 10em;
+  }
+}
 @media only screen and (max-width: 600px) and (min-width: 0px) {
   header {
     padding: 0em 0em 0em 0em;
@@ -275,7 +280,7 @@ header .ul-Contact:active {
 .Home {
   text-align: center;
   background-image: url("/images/Home/HomeImage-1.png"), linear-gradient(0.5turn, #C0D9F8, #C0D9F8, #E0EFFA);
-  background-position: bottom -80px left 0px;
+  background-position: top 0px left 0px;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 11em 0em 8em 0em;
@@ -283,6 +288,12 @@ header .ul-Contact:active {
   border-top-right-radius: 0% 0%;
   border-bottom-right-radius: 8% 8%;
   border-bottom-left-radius: 8% 8%;
+}
+@media only screen and (max-width: 1400px) and (min-width: 600px) {
+  .Home {
+    padding: 11em 0em 8em 0em;
+    background-position: bottom center;
+  }
 }
 @media only screen and (max-width: 600px) and (min-width: 0px) {
   .Home {
@@ -441,6 +452,11 @@ header .ul-Contact:active {
   left: 0;
   top: 0;
   position: relative;
+}
+@media only screen and (max-width: 1400px) and (min-width: 600px) {
+  .content {
+    padding: 16em 0em 0em 9em;
+  }
 }
 
 .image-top {
@@ -841,6 +857,12 @@ header .ul-Contact:active {
   right: 0;
   background-image: url("/images/about-me/AboutMe.png");
 }
+@media only screen and (max-width: 1400px) and (min-width: 600px) {
+  .person-one #InsidePersonAbsoluteOne {
+    top: 0;
+    right: 50px;
+  }
+}
 
 .person-two {
   position: relative;
@@ -857,6 +879,12 @@ header .ul-Contact:active {
   right: 495px;
   background-image: url("/images/about-me/AboutMe3D.png");
 }
+@media only screen and (max-width: 1400px) and (min-width: 600px) {
+  .person-two #InsidePersonAbsoluteTwo {
+    top: 0;
+    right: 295px;
+  }
+}
 
 .person-three {
   position: relative;
@@ -872,6 +900,12 @@ header .ul-Contact:active {
   bottom: 90px;
   left: 495px;
   background-image: url("/images/about-me/AboutMe3D-2.png");
+}
+@media only screen and (max-width: 1400px) and (min-width: 600px) {
+  .person-three #InsidePersonAbsoluteThree {
+    bottom: 90px;
+    left: 455px;
+  }
 }
 
 .Portfolio-showcase {

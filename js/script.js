@@ -7,11 +7,11 @@ function WorkingOnItAlert() {
 window.addEventListener("load", (event) => {
 
 //reload page cache
-let versionUpdate = (new Date()).getTime();  
-let script = document.createElement("script");  
-script.type = "text/javascript";  
-script.src = "/js/script.js" + versionUpdate;  
-document.body.appendChild(script);  
+// let versionUpdate = (new Date()).getTime();  
+// let script = document.createElement("script");  
+// script.type = "text/javascript";  
+// script.src = "/js/script.js" + versionUpdate;  
+// document.body.appendChild(script);  
 
 
 

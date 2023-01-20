@@ -154,7 +154,10 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 0em 18em 0em 20em;
-
+    @media only screen and (max-width: 1400px) and (min-width: 600px) {
+        // display: inline-block;
+        padding: 0em 10em 0em 10em;
+    }
     @media only screen and (max-width: 600px) and (min-width: 0px) {
         // display: inline-block;
         padding: 0em 0em 0em 0em;
@@ -332,7 +335,7 @@ header {
 .Home {
     text-align: center;
     background-image: url('/images/Home/HomeImage-1.png'), linear-gradient(0.5turn, #C0D9F8, #C0D9F8, #E0EFFA);
-    background-position: bottom -80px left 0px;
+    background-position: top 0px left 0px;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 11em 0em 8em 0em;
@@ -340,7 +343,10 @@ header {
     border-top-right-radius: 0% 0%;
     border-bottom-right-radius: 8% 8%;
     border-bottom-left-radius: 8% 8%;
-
+    @media only screen and (max-width: 1400px) and (min-width: 600px) {
+        padding: 11em 0em 8em 0em;
+        background-position: bottom center;
+    }
 
     @media only screen and (max-width: 600px) and (min-width: 0px) {
         background-position: bottom 0px left 0px;
@@ -487,6 +493,9 @@ header {
     left: 0;
     top: 0;
     position: relative;
+    @media only screen and (max-width: 1400px) and (min-width: 600px) {
+        padding: 16em 0em 0em 9em;
+    }
 }
 
 .image-top {
@@ -854,6 +863,10 @@ header {
         top: 0;
         right: 0;
         background-image: url('/images/about-me/AboutMe.png');
+        @media only screen and (max-width: 1400px) and (min-width: 600px) {
+            top: 0;
+            right: 50px;
+        }
     }
 }
 
@@ -874,6 +887,11 @@ header {
         top: 0;
         right: 495px;
         background-image: url('/images/about-me/AboutMe3D.png');
+        @media only screen and (max-width: 1400px) and (min-width: 600px) {
+            top: 0;
+            right: 295px;
+        }
+    
     }
 }
 
@@ -893,6 +911,10 @@ header {
         bottom: 90px;
         left: 495px;
         background-image: url('/images/about-me/AboutMe3D-2.png');
+        @media only screen and (max-width: 1400px) and (min-width: 600px) {
+            bottom: 90px;
+            left: 455px;
+        }
     }
 }
 
