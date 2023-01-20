@@ -5,6 +5,17 @@ function WorkingOnItAlert() {
 
 // function onload 
 window.addEventListener("load", (event) => {
+
+//reload page cache
+let versionUpdate = (new Date()).getTime();  
+let script = document.createElement("script");  
+script.type = "text/javascript";  
+script.src = "/js/script.js" + versionUpdate;  
+document.body.appendChild(script);  
+
+
+
+
   ScrollFooterBackgroundAnimation();
   document.getElementById('pageContainerIds').style = "overflow:none;";
   document.getElementById('preloader').style.display = "none";
