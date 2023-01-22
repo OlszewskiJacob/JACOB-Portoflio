@@ -154,10 +154,12 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 0em 18em 0em 20em;
+
     @media only screen and (max-width: 1400px) and (min-width: 600px) {
         // display: inline-block;
         padding: 0em 10em 0em 10em;
     }
+
     @media only screen and (max-width: 600px) and (min-width: 0px) {
         // display: inline-block;
         padding: 0em 0em 0em 0em;
@@ -343,6 +345,7 @@ header {
     border-top-right-radius: 0% 0%;
     border-bottom-right-radius: 8% 8%;
     border-bottom-left-radius: 8% 8%;
+
     @media only screen and (max-width: 1400px) and (min-width: 600px) {
         padding: 11em 0em 8em 0em;
         background-position: bottom center;
@@ -493,6 +496,7 @@ header {
     left: 0;
     top: 0;
     position: relative;
+
     @media only screen and (max-width: 1400px) and (min-width: 600px) {
         padding: 16em 0em 0em 9em;
     }
@@ -672,6 +676,32 @@ header {
     padding: 0em 0em 1em 0em;
 }
 
+.SkillFlipVariable {
+    transform: rotateY(180deg) !important;
+    opacity: 0 !important;
+    color: #fff !important;
+    // pointer-events: none;
+    // box-shadow: 0px 0px 0px #ffffff;
+}
+
+.SkillOneFlipContainerDarkAndWhite,
+.SkillTwoFlipContainerDarkAndWhite,
+.SkillThreeFlipContainerDarkAndWhite,
+.SkillFourFlipContainerDarkAndWhite,
+.SkillFiveFlipContainerDarkAndWhite,
+.SkillSixFlipContainerDarkAndWhite,
+.SkillSevenFlipContainerDarkAndWhite,
+.SkillEightFlipContainerDarkAndWhite {
+    position: relative;
+    padding: 2em 0em 2em 0em;
+    margin: 0em 1em 1em 0em;
+    width: 240px;
+    height: 240px;
+
+}
+
+
+
 .Skill-one,
 .Skill-two,
 .Skill-three,
@@ -680,6 +710,9 @@ header {
 .Skill-six,
 .Skill-seven,
 .Skill-eight {
+    position: absolute;
+    top: 0px;
+    left: 0px;
     padding: 2em 0em 2em 0em;
     margin: 0em 1em 1em 0em;
     font-size: 16px;
@@ -693,6 +726,56 @@ header {
     opacity: 0.33;
     transition: 220ms linear;
     background-color: #fff;
+}
+
+.SkillOneDARK,
+.SkillTwoDARK,
+.SkillThreeDARK,
+.SkillFourDARK,
+.SkillFiveDARK,
+.SkillSixDARK,
+.SkillSevenDARK,
+.SkillEightDARK  {
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 2em 0em 2em 0em;
+    margin: 0em 1em 1em 0em;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    width: 240px;
+    height: 240px;
+    // box-shadow: 0px 3px 30px #6186FF3D;
+    // border: 2px solid #7070702c;
+    border-radius: 10px;
+    opacity: 0;
+    pointer-events: none;
+    transition: 220ms linear;
+    background: linear-gradient(138deg, rgba(41, 134, 255, 0.950) 0%, rgba(184, 107, 255, 0.950) 100%);
+    //   background-color: #2986FF;
+}
+
+#copyHeaderDark {
+    color: #fff;
+    // text-decoration: underline 2px #fff;
+    text-underline-offset: 0.8em;
+    padding: 0em 0em 1em 0em;
+}
+
+.Skill-one-descryption-Dark,
+.Skill-two-descryption-Dark,
+.Skill-three-descryption-Dark,
+.Skill-four-descryption-Dark,
+.Skill-five-descryption-Dark,
+.Skill-six-descryption-Dark,
+.Skill-seven-descryption-Dark,
+.Skill-eight-descryption-Dark {
+    padding: 0em 0em 2em 0em;
+    font-size: 15px;
+    opacity: 1;
+    color: #fff;
 }
 
 .button-skill-read-more {
@@ -742,6 +825,8 @@ header {
         color: #2986FF;
     }
 }
+
+
 
 //---------------------about me---------------------
 //---------------------about me---------------------
@@ -863,6 +948,7 @@ header {
         top: 0;
         right: 0;
         background-image: url('/images/about-me/AboutMe.png');
+
         @media only screen and (max-width: 1400px) and (min-width: 600px) {
             top: 0;
             right: 50px;
@@ -887,11 +973,12 @@ header {
         top: 0;
         right: 495px;
         background-image: url('/images/about-me/AboutMe3D.png');
+
         @media only screen and (max-width: 1400px) and (min-width: 600px) {
             top: 0;
             right: 295px;
         }
-    
+
     }
 }
 
@@ -911,6 +998,7 @@ header {
         bottom: 90px;
         left: 495px;
         background-image: url('/images/about-me/AboutMe3D-2.png');
+
         @media only screen and (max-width: 1400px) and (min-width: 600px) {
             bottom: 90px;
             left: 455px;

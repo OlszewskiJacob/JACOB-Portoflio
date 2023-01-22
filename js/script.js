@@ -3,6 +3,10 @@ function WorkingOnItAlert() {
   alert("SORRY BUT THIS SECTION IS NOT READY!");
 }
 
+
+
+
+
 // function onload 
 window.addEventListener("load", (event) => {
 
@@ -12,6 +16,37 @@ window.addEventListener("load", (event) => {
   // script.type = "text/javascript";  
   // script.src = "/js/script.js" + versionUpdate;  
   // document.body.appendChild(script);  
+
+  // Flip Card for skills on active click change both card
+  let SkillOneClick = document.querySelectorAll(".SkillNotFlipped");
+  let callforAllIdButtons = document.querySelectorAll('[id=buttonSkillReadMore]');
+  let StyleForDarkFLip = "transform: rotateY(0deg) !important;opacity: 1!important;pointer-events: all;";
+  const callbuttonskillTwo = 'buttonSkillReadMore';
+
+
+
+  const doOnClick = (e) => {
+
+    let targetClickedElement = e.target.id;
+    if (targetClickedElement == callbuttonskillTwo) {
+      let darkParent = e.target.parentNode.parentNode.children[1];
+      console.log(e.target.parentNode.parentNode.children[1]);
+      e.target.parentNode.classList.add("SkillFlipVariable");
+      e.target.parentNode.classList.remove("SkillNotFlipped");
+      darkParent.style = "transform: rotateY(0deg) !important;opacity: 1!important;pointer-events: all;";
+    }
+    else {
+      darkParent.style = "transform: rotateY(-180deg) !important;opacity: 0!important;pointer-events: none;";
+      e.target.parentNode.classList.remove("SkillFlipVariable");
+      e.target.parentNode.classList.add("SkillNotFlipped");
+    }
+  }
+  document.querySelectorAll('.SkillNotFlipped').forEach((el) => {
+    el.addEventListener('click', doOnClick)
+  })
+
+
+
 
 
 
@@ -162,7 +197,6 @@ function AnimHeader() {
   //collect mouse information
   window.addEventListener("mousemove", (e) => {
     let xPos = e.clientX / 38.4;
-    console.log(e.clientX);
     if (xPos > 50) {
       xPos = 50;
     }
@@ -233,6 +267,23 @@ function ScrollFooterBackgroundAnimation() {
 
 
 
+
+
+
+
+
+//
+// function OnclickRotateSkill() {
+//   alert('work');
+// for (let z = 0; z < SkillFlip.length; z++) {
+//   if (SkillFlipContains.length == 0) {
+//     SkillFlip[z].classList.add('SkillFlipVariable');
+//   }
+//   else {
+//     SkillFlip[z].classList.remove('SkillFlipVariable');
+//   }
+// }
+// }
 
 
 

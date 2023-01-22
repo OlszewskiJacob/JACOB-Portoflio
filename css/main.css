@@ -612,6 +612,27 @@ header .ul-Contact:active {
   padding: 0em 0em 1em 0em;
 }
 
+.SkillFlipVariable {
+  transform: rotateY(180deg) !important;
+  opacity: 0 !important;
+  color: #fff !important;
+}
+
+.SkillOneFlipContainerDarkAndWhite,
+.SkillTwoFlipContainerDarkAndWhite,
+.SkillThreeFlipContainerDarkAndWhite,
+.SkillFourFlipContainerDarkAndWhite,
+.SkillFiveFlipContainerDarkAndWhite,
+.SkillSixFlipContainerDarkAndWhite,
+.SkillSevenFlipContainerDarkAndWhite,
+.SkillEightFlipContainerDarkAndWhite {
+  position: relative;
+  padding: 2em 0em 2em 0em;
+  margin: 0em 1em 1em 0em;
+  width: 240px;
+  height: 240px;
+}
+
 .Skill-one,
 .Skill-two,
 .Skill-three,
@@ -620,6 +641,9 @@ header .ul-Contact:active {
 .Skill-six,
 .Skill-seven,
 .Skill-eight {
+  position: absolute;
+  top: 0px;
+  left: 0px;
   padding: 2em 0em 2em 0em;
   margin: 0em 1em 1em 0em;
   font-size: 16px;
@@ -633,6 +657,52 @@ header .ul-Contact:active {
   opacity: 0.33;
   transition: 220ms linear;
   background-color: #fff;
+}
+
+.SkillOneDARK,
+.SkillTwoDARK,
+.SkillThreeDARK,
+.SkillFourDARK,
+.SkillFiveDARK,
+.SkillSixDARK,
+.SkillSevenDARK,
+.SkillEightDARK {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 2em 0em 2em 0em;
+  margin: 0em 1em 1em 0em;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  width: 240px;
+  height: 240px;
+  border-radius: 10px;
+  opacity: 0;
+  pointer-events: none;
+  transition: 220ms linear;
+  background: linear-gradient(138deg, rgba(41, 134, 255, 0.95) 0%, rgba(184, 107, 255, 0.95) 100%);
+}
+
+#copyHeaderDark {
+  color: #fff;
+  text-underline-offset: 0.8em;
+  padding: 0em 0em 1em 0em;
+}
+
+.Skill-one-descryption-Dark,
+.Skill-two-descryption-Dark,
+.Skill-three-descryption-Dark,
+.Skill-four-descryption-Dark,
+.Skill-five-descryption-Dark,
+.Skill-six-descryption-Dark,
+.Skill-seven-descryption-Dark,
+.Skill-eight-descryption-Dark {
+  padding: 0em 0em 2em 0em;
+  font-size: 15px;
+  opacity: 1;
+  color: #fff;
 }
 
 .button-skill-read-more {
