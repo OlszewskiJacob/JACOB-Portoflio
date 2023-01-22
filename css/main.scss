@@ -735,7 +735,7 @@ header {
 .SkillFiveDARK,
 .SkillSixDARK,
 .SkillSevenDARK,
-.SkillEightDARK  {
+.SkillEightDARK {
     transform: rotateY(180deg);
     position: absolute;
     top: 0px;
@@ -743,25 +743,28 @@ header {
     padding: 2em 0em 2em 0em;
     margin: 0em 1em 1em 0em;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 600;
     text-align: center;
     width: 240px;
     height: 240px;
-    // box-shadow: 0px 3px 30px #6186FF3D;
-    // border: 2px solid #7070702c;
+    box-shadow: inset 2px 2px 20px #F1F5FF;
+    // border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 10px;
     opacity: 0;
     pointer-events: none;
     transition: 220ms linear;
-    background: linear-gradient(138deg, rgba(41, 134, 255, 0.950) 0%, rgba(184, 107, 255, 0.950) 100%);
-    //   background-color: #2986FF;
+    // background: linear-gradient(138deg, #2986FF 0%, #2986FF 100%);
+    background-color: #fff;
+    //background-color: #2986FF;
 }
 
 #copyHeaderDark {
-    color: #fff;
+    color: #1C2731;
     // text-decoration: underline 2px #fff;
     text-underline-offset: 0.8em;
     padding: 0em 0em 1em 0em;
+    opacity: .75;
+
 }
 
 .Skill-one-descryption-Dark,
@@ -774,8 +777,10 @@ header {
 .Skill-eight-descryption-Dark {
     padding: 0em 0em 2em 0em;
     font-size: 15px;
-    opacity: 1;
-    color: #fff;
+    font-weight: bold;
+    opacity: .75;
+    color: #1C2731;
+
 }
 
 .button-skill-read-more {

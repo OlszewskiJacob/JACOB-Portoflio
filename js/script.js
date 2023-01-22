@@ -30,7 +30,6 @@ window.addEventListener("load", (event) => {
     let targetClickedElement = e.target.id;
     if (targetClickedElement == callbuttonskillTwo) {
       let darkParent = e.target.parentNode.parentNode.children[1];
-      console.log(e.target.parentNode.parentNode.children[1]);
       e.target.parentNode.classList.add("SkillFlipVariable");
       e.target.parentNode.classList.remove("SkillNotFlipped");
       darkParent.style = "transform: rotateY(0deg) !important;opacity: 1!important;pointer-events: all;";
