@@ -770,7 +770,7 @@ header {
     left: 0px;
     padding: 2em 0em 2em 0em;
     margin: 0em 1em 1em 0em;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     text-align: center;
     width: 240px;
@@ -939,7 +939,7 @@ header {
         margin: auto;
         width: 450px;
         font-size: 42px;
-        font-weight: 100;
+        font-weight: bold;
         line-height: 40px;
 
         @media only screen and (max-width: 600px) and (min-width: 0px) {
@@ -953,7 +953,7 @@ header {
         left: 0;
         margin: auto;
         width: 450px;
-        font-size: 18px;
+        font-size: 16px;
 
         @media only screen and (max-width: 600px) and (min-width: 0px) {
             font-size: 14px;
@@ -1190,8 +1190,9 @@ header {
 .portfolio-block-second,
 .portfolio-block-third,
 .portfolio-block-fourth,
-.portfolio-block-fifth,
-.portfolio-block-sixth {
+.portfolio-block-fifth
+// .portfolio-block-sixth
+ {
     align-items: center;
     display: none;
     // display: inline-block;
@@ -1392,8 +1393,8 @@ header {
 
     .talk-copy {
         margin: auto;
-        font-size: 18px;
-        width: 400px;
+        font-size: 16px;
+        width: 360px;
 
         @media only screen and (max-width: 600px) and (min-width: 0px) {
             font-size: 14px;

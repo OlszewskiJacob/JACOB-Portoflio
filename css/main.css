@@ -681,7 +681,7 @@ header .ul-Contact:active {
   left: 0px;
   padding: 2em 0em 2em 0em;
   margin: 0em 1em 1em 0em;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   text-align: center;
   width: 240px;
@@ -902,7 +902,7 @@ header .ul-Contact:active {
   margin: auto;
   width: 450px;
   font-size: 42px;
-  font-weight: 100;
+  font-weight: bold;
   line-height: 40px;
 }
 @media only screen and (max-width: 600px) and (min-width: 0px) {
@@ -916,7 +916,7 @@ header .ul-Contact:active {
   left: 0;
   margin: auto;
   width: 450px;
-  font-size: 18px;
+  font-size: 16px;
 }
 @media only screen and (max-width: 600px) and (min-width: 0px) {
   .about-me-copy-container #Copy-about-us {
@@ -1119,8 +1119,7 @@ header .ul-Contact:active {
 .portfolio-block-second,
 .portfolio-block-third,
 .portfolio-block-fourth,
-.portfolio-block-fifth,
-.portfolio-block-sixth {
+.portfolio-block-fifth {
   align-items: center;
   display: none;
   margin: auto;
@@ -1132,8 +1131,7 @@ header .ul-Contact:active {
 .portfolio-block-second,
 .portfolio-block-third,
 .portfolio-block-fourth,
-.portfolio-block-fifth,
-.portfolio-block-sixth {
+.portfolio-block-fifth {
     width: 219.42px;
     height: 123.42px;
   }
@@ -1294,8 +1292,8 @@ header .ul-Contact:active {
 }
 .Lets-talk-sec .talk-copy {
   margin: auto;
-  font-size: 18px;
-  width: 400px;
+  font-size: 16px;
+  width: 360px;
 }
 @media only screen and (max-width: 600px) and (min-width: 0px) {
   .Lets-talk-sec .talk-copy {
