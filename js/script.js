@@ -202,13 +202,15 @@ function AnimHeader() {
     let x = document.getElementById("Home-Call");
     let stylestoChange = '/images/Home/HomeImage-';
     let numericToAnimate = xPos.toFixed(0) + '.png';
-    x.style = 'background-image:url(' + stylestoChange + numericToAnimate + '), linear-gradient(0.5turn, #C0D9F8, #C0D9F8, #E0EFFA);';
+    //url(' + stylestoChange + numericToAnimate + '),
+    x.style = 'background-image: linear-gradient(90turn, #172047, #172047, #1F2C5E);';
   });
 }
 
 
 //animation on footer by loading png sequence base on scroll
 function ScrollFooterBackgroundAnimation() {
+
 
   let sciezka = '/images/contact/contactSequence/';
   let latestKnownScrollY = 0,
@@ -242,7 +244,7 @@ function ScrollFooterBackgroundAnimation() {
       item[0].style = 'background-image:url(' + sciezka + 'frame_' + ((VariableToAnimateBasedOnHeightTimeTwo - 225)).toFixed(0) + '.png),linear-gradient(0.5turn, #FAFAFC, #F1F0F7, #ffffff);';
     }
     else {
-      item[0].style = 'background-image:url(' + sciezka + 'frame_34.png),linear-gradient(0.5turn, #FAFAFC, #F1F0F7, #ffffff);';
+      item[0].style = 'background-image:url(' + sciezka + 'frame_1.png),linear-gradient(0.5turn, #FAFAFC, #F1F0F7, #ffffff);';
 
     }
   }
@@ -269,20 +271,6 @@ function ScrollFooterBackgroundAnimation() {
 
 
 
-
-
-//
-// function OnclickRotateSkill() {
-//   alert('work');
-// for (let z = 0; z < SkillFlip.length; z++) {
-//   if (SkillFlipContains.length == 0) {
-//     SkillFlip[z].classList.add('SkillFlipVariable');
-//   }
-//   else {
-//     SkillFlip[z].classList.remove('SkillFlipVariable');
-//   }
-// }
-// }
 
 
 

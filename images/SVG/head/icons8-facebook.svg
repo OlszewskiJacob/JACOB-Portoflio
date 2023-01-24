@@ -1,1 +1,10 @@
-<?xml version="1.0"?><svg fill="#2986FF" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px">    <path d="M12,2C6.477,2,2,6.477,2,12c0,5.013,3.693,9.153,8.505,9.876V14.65H8.031v-2.629h2.474v-1.749 c0-2.896,1.411-4.167,3.818-4.167c1.153,0,1.762,0.085,2.051,0.124v2.294h-1.642c-1.022,0-1.379,0.969-1.379,2.061v1.437h2.995 l-0.406,2.629h-2.588v7.247C18.235,21.236,22,17.062,22,12C22,6.477,17.523,2,12,2z"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Warstwa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+</style>
+<path class="st0" d="M12,2C6.5,2,2,6.5,2,12c0,5,3.7,9.2,8.5,9.9v-7.2H8V12h2.5v-1.7c0-2.9,1.4-4.2,3.8-4.2c1.2,0,1.8,0.1,2.1,0.1
+	v2.3h-1.6c-1,0-1.4,1-1.4,2.1V12h3l-0.4,2.6h-2.6v7.2c4.9-0.7,8.6-4.8,8.6-9.9C22,6.5,17.5,2,12,2z"/>
+</svg>
