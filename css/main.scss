@@ -337,8 +337,9 @@ header {
 .Home {
 
     text-align: center;
-    background-image:url(/images/Home/HomeImage-1.png), linear-gradient(90turn, #172047, #172047, #1F2C5E);
-    //linear-gradient(0.5turn, #C0D9F8, #C0D9F8, #E0EFFA);
+    background-image:url(/images/Home/HomeImage-1.png),linear-gradient(0.5turn, #C0D9F8, #C0D9F8, #E0EFFA);;
+    //linear-gradient(90turn, #172047, #172047, #1F2C5E)
+    //
     background-position: top 0px right 0px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -358,7 +359,15 @@ header {
         border-radius: 0%;
     }
 }
-
+#HeaderVideo{
+    z-index: -111;
+    position: absolute;
+    right: 0px;
+    margin: auto;
+    top: 0px;
+    min-width: 100%;
+    min-height: 100%;
+}
 .content {
     color: #fff;
 }

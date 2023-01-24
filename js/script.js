@@ -204,7 +204,7 @@ function AnimHeader() {
     let stylestoChange = '/images/Home/HomeImage-';
     let numericToAnimate = xPos.toFixed(0) + '.png';
     
-    x.style = 'background-image:url(' + stylestoChange + numericToAnimate + '), linear-gradient(90turn, #172047, #172047, #1F2C5E);';
+    x.style = 'background-image:url(' + stylestoChange + numericToAnimate + '), linear-gradient(90turn, #172047, #1720476e, #1f2c5e74);';
   });
 }
 

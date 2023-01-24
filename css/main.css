@@ -276,7 +276,7 @@ header .ul-Contact:active {
 
 .Home {
   text-align: center;
-  background-image: url(/images/Home/HomeImage-1.png), linear-gradient(90turn, #172047, #172047, #1F2C5E);
+  background-image: url(/images/Home/HomeImage-1.png), linear-gradient(0.5turn, #C0D9F8, #C0D9F8, #E0EFFA);
   background-position: top 0px right 0px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -297,6 +297,16 @@ header .ul-Contact:active {
     padding: 2em 0em 0em 2em;
     border-radius: 0%;
   }
+}
+
+#HeaderVideo {
+  z-index: -111;
+  position: absolute;
+  right: 0px;
+  margin: auto;
+  top: 0px;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .content {
