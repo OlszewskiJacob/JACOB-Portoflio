@@ -490,9 +490,12 @@ header .ul-Contact:active {
 }
 
 .Skills {
-  background-color: #fff;
+  background-color: transparent;
   padding: 6em 0em 10em 0em;
-  z-index: 11111;
+  z-index: 1;
+  position: relative;
+  bottom: 200px;
+  left: 0px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -560,7 +563,7 @@ header .ul-Contact:active {
 
 .skills-container {
   display: inline-flex;
-  padding: 14em 0em 0em 0em;
+  padding: 0em 0em 0em 0em;
 }
 @media only screen and (max-width: 600px) and (min-width: 0px) {
   .skills-container {
@@ -608,9 +611,12 @@ header .ul-Contact:active {
   padding: 0em 0em 2em 0em;
 }
 
-.Skill-two-descryption,
 .Skill-five-descryption {
   padding: 0em 0em 0em 0em;
+}
+
+.Skill-two-descryption {
+  padding: 0em 0em 0.5em 0em;
 }
 
 .Skill-four-descryption,
@@ -661,7 +667,7 @@ header .ul-Contact:active {
   height: 240px;
   box-shadow: 0px 3px 30px rgba(97, 134, 255, 0.2392156863);
   border: 2px solid rgba(112, 112, 112, 0.1725490196);
-  border-radius: 10px;
+  border-radius: 5px;
   opacity: 1;
   transition: 220ms linear;
   background-color: #fff;
@@ -685,9 +691,9 @@ header .ul-Contact:active {
   font-weight: 600;
   text-align: center;
   width: 240px;
-  height: 240px;
+  height: 257px;
   box-shadow: inset 2px 2px 20px #F1F5FF;
-  border-radius: 10px;
+  border-radius: 5px;
   opacity: 0;
   pointer-events: none;
   transition: 220ms linear;
@@ -736,7 +742,7 @@ header .ul-Contact:active {
 .Skill-seven:hover,
 .Skill-eight:hover {
   border: 2px solid #5C66E9;
-  border-radius: 15px;
+  border-radius: 5px;
   opacity: 1;
   transform: scale(1.025);
   transform-origin: 50% 50%;
@@ -1314,13 +1320,13 @@ header .ul-Contact:active {
   font-weight: 600;
   cursor: pointer;
   margin: 2em 0em 0em 0em;
-  width: 220px;
-  height: 71px;
+  width: 180px;
+  height: 64px;
   border: none;
   background-color: #2986FF;
   color: white;
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
   border-radius: 10px;
   box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.3);
   transition: transform 150ms linear;

@@ -10,6 +10,7 @@ function WorkingOnItAlert() {
 // function onload 
 window.addEventListener("load", (event) => {
 
+  event.preventDefault()
   //reload page cache
   // let versionUpdate = (new Date()).getTime();  
   // let script = document.createElement("script");  
@@ -113,7 +114,7 @@ function reveal() {
   for (let i = 0; i < reveals.length; i++) {
     let windowheight = window.innerHeight;
     let revealtop = reveals[i].getBoundingClientRect().top;
-    let revealpoint = 80;
+    let revealpoint = 40;
     if (revealtop < windowheight - revealpoint) {
       reveals[i].classList.add('active');
     }
