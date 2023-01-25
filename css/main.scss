@@ -486,7 +486,7 @@ header {
 
 .content,
 .image-top {
-    padding: 0em 2em 0em 0em;
+    padding: 0em 0em 0em 0em;
     display: inline-block;
     text-align: center;
     margin: auto;
@@ -511,11 +511,14 @@ header {
 
 
 .image-top {
-    width: 240px;
-    height: auto;
+    background-image: url(/images/Home/B.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: 320px;
+    height: 320px;
     position: relative;
     top: 20px;
-    left: 0;
+    left: 20px;
     pointer-events: none;
     cursor: none;
 
