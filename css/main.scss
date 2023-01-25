@@ -337,7 +337,7 @@ header {
 .Home {
 
     text-align: center;
-    background-image:url(/images/Home/HomeImage-1.png),linear-gradient(90turn, #172047, #172047, #1f2c5e);
+    background-image: url(/images/Home/HomeImage-1.png), linear-gradient(90turn, #172047, #172047, #1f2c5e);
     background-position: top 0px right 0px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -357,6 +357,7 @@ header {
         border-radius: 0%;
     }
 }
+
 .content {
     color: #fff;
 }
@@ -485,7 +486,7 @@ header {
 
 .content,
 .image-top {
-    padding:0em 2em 0em 0em;
+    padding: 0em 2em 0em 0em;
     display: inline-block;
     text-align: center;
     margin: auto;
@@ -506,12 +507,15 @@ header {
     }
 }
 
+
+
+
 .image-top {
     width: 240px;
     height: auto;
     position: relative;
-    top:20px;
-    left:0;
+    top: 20px;
+    left: 0;
     pointer-events: none;
     cursor: none;
 
@@ -521,8 +525,8 @@ header {
 }
 
 #copyHeader {
- //   text-decoration: underline 2px #2986FF;
- //   text-underline-offset: 0.8em;
+    //   text-decoration: underline 2px #2986FF;
+    //   text-underline-offset: 0.8em;
     padding: 1.5em 0em 0em 0em;
 }
 
@@ -561,9 +565,9 @@ header {
     background-color: transparent;
     padding: 6em 0em 10em 0em;
     z-index: 1;
-    position:relative; 
-    bottom:200px;
-    left:0px;
+    position: relative;
+    bottom: 200px;
+    left: 0px;
     // background-image: url(/images/skills/back-skills.png);
     background-size: cover;
     background-position: center;
@@ -585,16 +589,19 @@ header {
     right: 100px;
     margin: auto;
     text-align: left;
-    img{
-    width: 700px;
-    height: auto;
+
+    img {
+        width: 700px;
+        height: auto;
+    }
 }
-}
-.skillsCopyContainer{
+
+.skillsCopyContainer {
     width: 500px;
     height: auto;
 
 }
+
 .skillsCopyContainer,
 .ImageToDisplayBlockSkillsCopy {
     // background-color: #fff;
@@ -618,7 +625,7 @@ header {
         font-size: 42px;
         font-weight: bold;
         text-align: left;
-         line-height: 44px;
+        line-height: 44px;
     }
 }
 
@@ -699,9 +706,11 @@ header {
 .Skill-five-descryption {
     padding: 0em 0em 0em 0em;
 }
-.Skill-two-descryption{
+
+.Skill-two-descryption {
     padding: 0em 0em 0.5em 0em;
 }
+
 .Skill-four-descryption,
 .Skill-eight-descryption,
 .Skill-seven-descryption,
@@ -729,7 +738,7 @@ header {
     padding: 2em 0em 2em 0em;
     margin: 0em 1em 1em 0em;
     width: 240px;
-    height:240px;
+    height: 240px;
 
 }
 
@@ -822,7 +831,7 @@ header {
     border: none;
     text-align: center;
     font-size: 12px;
-    font-weight:600;
+    font-weight: 600;
     transition: transform 350ms linear;
     background-color: transparent;
     color: #2986FF;
@@ -1196,9 +1205,9 @@ header {
 .portfolio-block-second,
 .portfolio-block-third,
 .portfolio-block-fourth,
-.portfolio-block-fifth
-// .portfolio-block-sixth
- {
+.portfolio-block-fifth // .portfolio-block-sixth
+
+    {
     align-items: center;
     display: none;
     // display: inline-block;
