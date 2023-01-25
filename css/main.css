@@ -276,7 +276,7 @@ header .ul-Contact:active {
 
 .Home {
   text-align: center;
-  background-image: url(/images/Home/HomeImage-1.png), linear-gradient(90turn, #172047, rgba(23, 32, 71, 0.431372549), #1f2c5e), url(/images/Home/header.gif);
+  background-image: url(/images/Home/HomeImage-1.png), linear-gradient(90turn, #172047, #172047, #1f2c5e);
   background-position: top 0px right 0px;
   background-repeat: no-repeat;
   background-size: cover;
