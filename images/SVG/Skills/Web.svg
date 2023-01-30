@@ -1,31 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 27.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Warstwa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+	 viewBox="0 0 110 110" style="enable-background:new 0 0 110 110;" xml:space="preserve">
 <style type="text/css">
-	.st0{opacity:0.45;fill:#E8F0FB;enable-background:new    ;}
-	.st1{fill:#2986FF;stroke:#2986FF;stroke-width:0.5;stroke-miterlimit:10;}
+	.st0{opacity:0.22;fill:#2986FF;enable-background:new    ;}
+	.st1{fill:#1F2C5E;stroke:#1F2C5E;stroke-width:0.5;stroke-miterlimit:10;}
+	.st2{fill:#1F2C5E;stroke:#1F2C5E;stroke-width:0.5;stroke-miterlimit:10.0002;}
+	.st3{fill:#1F2C5E;stroke:#1F2C5E;stroke-width:0.5;stroke-miterlimit:10.0005;}
 </style>
-<circle class="st0" cx="23" cy="20.3" r="17"/>
-<path class="st1" d="M31.2,32.8h-30V9.2h29.9v23.6H31.2z M1.9,32.2h28.7V9.8H1.9V32.2z"/>
-<path class="st1" d="M36.9,32h-6.3V17.8h6.3V32z M31.2,31.4h5V18.5h-5V31.4z"/>
-<path class="st1" d="M36.9,21.3h-6.3v-3.4h6.3V21.3z M31.2,20.6h5v-2.1h-5V20.6z"/>
-<path class="st1" d="M29.2,29.5H10.3V16h18.9V29.5z M11,28.9h17.6V16.6H11V28.9z"/>
-<path class="st1" d="M31.2,14.5h-30V9.2h29.9v5.3H31.2z M1.9,13.9h28.7V9.8H1.9V13.9z"/>
-<path class="st1" d="M21.1,12.8c-0.5,0-0.9-0.4-0.9-0.9c0-0.5,0.4-0.9,0.9-0.9c0.5,0,0.9,0.4,0.9,0.9C22.1,12.4,21.6,12.8,21.1,12.8
-	z M21.1,11.3c-0.3,0-0.5,0.2-0.5,0.5c0,0.3,0.2,0.5,0.5,0.5s0.5-0.2,0.5-0.5C21.6,11.6,21.4,11.3,21.1,11.3z"/>
-<path class="st1" d="M24.6,12.8c-0.5,0-0.9-0.4-0.9-0.9c0-0.5,0.4-0.9,0.9-0.9c0.5,0,0.9,0.4,0.9,0.9C25.5,12.4,25.1,12.8,24.6,12.8
-	z M24.6,11.3c-0.3,0-0.5,0.2-0.5,0.5c0,0.3,0.2,0.5,0.5,0.5s0.5-0.2,0.5-0.5C25.1,11.6,24.9,11.3,24.6,11.3z"/>
-<path class="st1" d="M28.1,12.8c-0.5,0-0.9-0.4-0.9-0.9c0-0.5,0.4-0.9,0.9-0.9c0.5,0,0.9,0.4,0.9,0.9C29.1,12.4,28.7,12.8,28.1,12.8
-	z M28.1,11.3c-0.3,0-0.5,0.2-0.5,0.5c0,0.3,0.2,0.5,0.5,0.5s0.5-0.2,0.5-0.5C28.6,11.6,28.4,11.3,28.1,11.3z"/>
-<rect x="7.7" y="19.7" class="st1" width="2.9" height="0.6"/>
-<rect x="8.8" y="23.4" class="st1" width="2.2" height="0.6"/>
-<rect x="8.8" y="27.1" class="st1" width="2" height="0.6"/>
+<circle class="st0" cx="55.1" cy="54.5" r="53.4"/>
+<path class="st1" d="M91.3,92.1H1.2V21.2H91v70.9H91.3z M3.3,90.3h86.2V23H3.3V90.3z"/>
+<path class="st1" d="M108.5,89.7H89.5V47h18.9V89.7z M91.3,87.9h15V49.1h-15V87.9z"/>
+<path class="st1" d="M108.5,57.6H89.5V47.3h18.9V57.6z M91.3,55.5h15v-6.3h-15V55.5z"/>
+<path class="st1" d="M85.3,82.2H28.6V41.6h56.8V82.2z M30.7,80.4h52.9v-37H30.7V80.4z"/>
+<path class="st1" d="M91.3,37.1H1.2V21.2H91v15.9H91.3z M3.3,35.3h86.2V23H3.3V35.3z"/>
+<path class="st1" d="M61,32c-1.5,0-2.7-1.2-2.7-2.7c0-1.5,1.2-2.7,2.7-2.7c1.5,0,2.7,1.2,2.7,2.7C64,30.8,62.5,32,61,32z M61,27.5
+	c-0.9,0-1.5,0.6-1.5,1.5c0,0.9,0.6,1.5,1.5,1.5c0.9,0,1.5-0.6,1.5-1.5C62.5,28.4,61.9,27.5,61,27.5z"/>
+<path class="st1" d="M71.5,32c-1.5,0-2.7-1.2-2.7-2.7c0-1.5,1.2-2.7,2.7-2.7c1.5,0,2.7,1.2,2.7,2.7C74.2,30.8,73,32,71.5,32z
+	 M71.5,27.5c-0.9,0-1.5,0.6-1.5,1.5c0,0.9,0.6,1.5,1.5,1.5c0.9,0,1.5-0.6,1.5-1.5C73,28.4,72.4,27.5,71.5,27.5z"/>
+<path class="st1" d="M82,32c-1.5,0-2.7-1.2-2.7-2.7c0-1.5,1.2-2.7,2.7-2.7c1.5,0,2.7,1.2,2.7,2.7C85,30.8,83.8,32,82,32z M82,27.5
+	c-0.9,0-1.5,0.6-1.5,1.5c0,0.9,0.6,1.5,1.5,1.5s1.5-0.6,1.5-1.5C83.5,28.4,82.9,27.5,82,27.5z"/>
+<rect x="20.7" y="52.8" class="st1" width="8.7" height="1.8"/>
+<rect x="24.1" y="63.9" class="st1" width="6.6" height="1.8"/>
+<rect x="24.1" y="75" class="st1" width="6" height="1.8"/>
 <g>
-	<rect x="24.1" y="18.9" transform="matrix(0.82 -0.5724 0.5724 0.82 -6.2994 18.041)" class="st1" width="2.8" height="0.4"/>
-	<rect x="25.3" y="17.6" transform="matrix(0.5723 -0.8201 0.8201 0.5723 -4.6945 29.0846)" class="st1" width="0.4" height="2.8"/>
+	<rect x="70.1" y="50.4" transform="matrix(0.82 -0.5724 0.5724 0.82 -15.7908 51.7345)" class="st2" width="8.4" height="1.2"/>
+	<rect x="73.6" y="46.6" transform="matrix(0.5723 -0.8201 0.8201 0.5723 -9.927 82.5438)" class="st3" width="1.2" height="8.4"/>
 </g>
-<rect x="12.4" y="21.7" class="st1" width="12.2" height="0.6"/>
-<rect x="12.4" y="26.2" class="st1" width="12.2" height="0.6"/>
-<rect x="12.4" y="23.9" class="st1" width="8.2" height="0.6"/>
+<rect x="34.9" y="58.8" class="st1" width="36.7" height="1.8"/>
+<rect x="34.9" y="72.3" class="st1" width="36.7" height="1.8"/>
+<rect x="34.9" y="65.4" class="st1" width="24.6" height="1.8"/>
 </svg>

@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 27.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Warstwa_2_00000084509582386889585950000015308001120841105852_"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 113.7 106.2"
-	 style="enable-background:new 0 0 113.7 106.2;" xml:space="preserve">
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 110 106.2"
+	 style="enable-background:new 0 0 110 106.2;" xml:space="preserve">
 <style type="text/css">
-	.st0{opacity:0.45;fill:#E8F0FB;enable-background:new    ;}
-	.st1{fill:#2986FF;stroke:#2986FF;stroke-miterlimit:10;}
+	.st0{opacity:0.22;fill:#2986FF;enable-background:new    ;}
+	.st1{fill:#1F2C5E;stroke:#1F2C5E;stroke-miterlimit:10;}
+	.st2{fill:#1F2C5E;stroke:#1F2C5E;stroke-width:1;stroke-miterlimit:10.0004;}
+	.st3{fill:#1F2C5E;stroke:#1F2C5E;stroke-width:1;stroke-miterlimit:9.9998;}
+	.st4{fill:#1F2C5E;stroke:#1F2C5E;stroke-width:1;stroke-miterlimit:10.0001;}
+	.st5{fill:#1F2C5E;stroke:#1F2C5E;stroke-width:1;stroke-miterlimit:10.0005;}
 </style>
-<circle class="st0" cx="60.6" cy="53.1" r="53.1"/>
-<path class="st1" d="M76.6,82.9H14V20.3h62.6V82.9L76.6,82.9z M16,80.9h58.6V22.3H16V80.9L16,80.9z"/>
-<path class="st1" d="M97.4,94.7H28V25.3h69.4L97.4,94.7L97.4,94.7z M30,92.7h65.4V27.3H30L30,92.7L30,92.7z"/>
-<rect x="85.3" y="75.3" transform="matrix(0.4926 -0.8703 0.8703 0.4926 -32.1746 119.3485)" class="st1" width="2" height="24"/>
-<rect x="85.7" y="13.1" transform="matrix(0.2307 -0.973 0.973 0.2307 43.5561 102.7272)" class="st1" width="2" height="21.5"/>
-<rect x="20.3" y="16.4" transform="matrix(0.3331 -0.9429 0.9429 0.3331 -8.2746 36.0469)" class="st1" width="2" height="14.9"/>
-<rect x="20.7" y="78.9" transform="matrix(0.6447 -0.7645 0.7645 0.6447 -59.6091 47.8468)" class="st1" width="2" height="18.3"/>
+<circle class="st0" cx="56.1" cy="53.1" r="53.1"/>
+<path class="st1" d="M74.8,82.9H12.2V20.3h62.6V82.9L74.8,82.9z M14.2,80.9h58.6V22.3H14.2V80.9L14.2,80.9z"/>
+<path class="st1" d="M95.6,94.7H26.2V25.3h69.4V94.7L95.6,94.7z M28.2,92.7h65.4V27.3H28.2V92.7L28.2,92.7z"/>
+<rect x="83.5" y="75.2" transform="matrix(0.4926 -0.8703 0.8703 0.4926 -33.0683 117.7762)" class="st2" width="2" height="24"/>
+<rect x="83.9" y="13.1" transform="matrix(0.2307 -0.973 0.973 0.2307 42.0974 100.9865)" class="st3" width="2" height="21.5"/>
+<rect x="18.5" y="16.5" transform="matrix(0.3331 -0.9429 0.9429 0.3331 -9.5653 34.2914)" class="st4" width="2" height="14.9"/>
+<rect x="18.8" y="78.9" transform="matrix(0.6447 -0.7645 0.7645 0.6447 -60.2387 46.4482)" class="st5" width="2" height="18.3"/>
 <g>
-	<rect x="55.9" y="51.6" class="st1" width="2" height="10.6"/>
-	<rect x="51.6" y="55.9" class="st1" width="10.6" height="2"/>
+	<rect x="54.1" y="51.6" class="st1" width="2" height="10.6"/>
+	<rect x="49.8" y="55.9" class="st1" width="10.6" height="2"/>
 </g>
 </svg>
