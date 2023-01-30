@@ -512,8 +512,8 @@ header .ul-Contact:active {
   border-bottom-left-radius: 0% 0%;
 }
 .Skills img {
-  width: 70px;
-  height: 70px;
+  width: 62px;
+  height: 62px;
 }
 
 .ImageToDisplayBlockSkillsCopy {
@@ -628,9 +628,12 @@ header .ul-Contact:active {
 
 .Skill-four-descryption,
 .Skill-eight-descryption,
-.Skill-seven-descryption,
 .Skill-six-descryption {
   padding: 0em 0em 1em 0em;
+}
+
+.Skill-seven-descryption {
+  padding: 0em 0em 0em 0em;
 }
 
 .SkillFlipVariable {
