@@ -852,7 +852,7 @@ header .ul-Contact:active {
 .about-me {
   text-align: center;
   list-style-type: none;
-  padding: 20em 0em 22em 0em;
+  padding: 15em 0em 20em 0em;
   width: auto;
   background-color: #F1F5FF;
   border-top-left-radius: 15% 15%;
@@ -1009,7 +1009,7 @@ header .ul-Contact:active {
 
 .Portfolio-showcase {
   background-color: #fff;
-  padding: 18em 0em 8em 0em;
+  padding: 8em 0em 8em 0em;
   text-align: center;
   width: 100%;
 }
