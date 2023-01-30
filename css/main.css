@@ -477,7 +477,7 @@ header .ul-Contact:active {
 }
 
 #copyHeader {
-  padding: 1.5em 0em 0em 0em;
+  padding: 0.5em 0em 0em 0em;
 }
 
 #copyHeader-seven {
@@ -512,8 +512,8 @@ header .ul-Contact:active {
   border-bottom-left-radius: 0% 0%;
 }
 .Skills img {
-  width: 44px;
-  height: 44px;
+  width: 70px;
+  height: 70px;
 }
 
 .ImageToDisplayBlockSkillsCopy {
@@ -665,7 +665,7 @@ header .ul-Contact:active {
   position: absolute;
   top: 0px;
   left: 0px;
-  padding: 2.5em 0em 2em 0em;
+  padding: 1.5em 0em 3em 0em;
   margin: 0em 1em 1em 0em;
   font-size: 16px;
   font-weight: bold;

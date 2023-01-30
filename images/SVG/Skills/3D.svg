@@ -1,10 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="41.436" height="53.274" viewBox="0 0 41.436 53.274">
-  <g id="Group_27" data-name="Group 27" transform="translate(-1724.764 -1858.159)">
-    <g id="Group_26" data-name="Group 26" transform="translate(1724.764 1858.159)">
-      <g id="ghost-character">
-        <path id="Path_623" data-name="Path 623" d="M14.9,10.96A2.96,2.96,0,1,1,11.936,8,2.96,2.96,0,0,1,14.9,10.96Z" transform="translate(2.792 6.798)" fill="#2986ff"/>
-        <path id="Path_624" data-name="Path 624" d="M15.931,13.919a2.96,2.96,0,1,0-2.96-2.96A2.96,2.96,0,0,0,15.931,13.919Z" transform="translate(10.621 6.798)" fill="#2986ff"/>
-        <path id="Path_625" data-name="Path 625" d="M46.436,56.274V23.718A20.718,20.718,0,0,0,5,23.718V56.274h8.371l4.186-4.186,4.186,4.186h7.951l4.185-4.186,4.186,4.186ZM40.516,23.718a14.8,14.8,0,0,0-29.6,0V50.355l6.638-6.638,8.161,8.161,8.161-8.161,6.637,6.637Z" transform="translate(-5 -3)" fill="#2986ff" fill-rule="evenodd"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Warstwa_2" data-name="Warstwa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 113.69 106.25">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #2986ff;
+      }
+
+      .cls-2 {
+        fill: #e8f0fb;
+        opacity: .45;
+      }
+    </style>
+  </defs>
+  <g id="Warstwa_1-2" data-name="Warstwa 1">
+    <g>
+      <circle class="cls-2" cx="60.56" cy="53.13" r="53.13"/>
+      <path class="cls-1" d="m62.56,82.91H0V20.34h62.56v62.56Zm-60.56-2h58.56V22.34H2v58.56Z"/>
+      <path class="cls-1" d="m83.43,94.72H14.01V25.29h69.43v69.43Zm-67.43-2h65.43V27.29H16.01v65.43Z"/>
+      <rect class="cls-1" x="71.25" y="75.27" width="2" height="23.98" transform="translate(-39.28 107.16) rotate(-60.49)"/>
+      <rect class="cls-1" x="71.74" y="13.09" width="2" height="21.45" transform="translate(32.78 89.1) rotate(-76.66)"/>
+      <rect class="cls-1" x="6.34" y="16.45" width="2" height="14.85" transform="translate(-17.62 22.84) rotate(-70.54)"/>
+      <rect class="cls-1" x="6.65" y="78.89" width="2" height="18.32" transform="translate(-64.59 37.13) rotate(-49.86)"/>
+      <g>
+        <rect class="cls-1" x="41.9" y="51.63" width="2" height="10.57"/>
+        <rect class="cls-1" x="37.62" y="55.91" width="10.57" height="2"/>
       </g>
     </g>
   </g>
