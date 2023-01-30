@@ -1,30 +1,21 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg id="Warstwa_2" data-name="Warstwa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 113.69 106.25">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #2986ff;
-      }
-
-      .cls-2 {
-        fill: #e8f0fb;
-        opacity: .45;
-      }
-    </style>
-  </defs>
-  <g id="Warstwa_1-2" data-name="Warstwa 1">
-    <g>
-      <circle class="cls-2" cx="60.56" cy="53.13" r="53.13"/>
-      <path class="cls-1" d="m62.56,82.91H0V20.34h62.56v62.56Zm-60.56-2h58.56V22.34H2v58.56Z"/>
-      <path class="cls-1" d="m83.43,94.72H14.01V25.29h69.43v69.43Zm-67.43-2h65.43V27.29H16.01v65.43Z"/>
-      <rect class="cls-1" x="71.25" y="75.27" width="2" height="23.98" transform="translate(-39.28 107.16) rotate(-60.49)"/>
-      <rect class="cls-1" x="71.74" y="13.09" width="2" height="21.45" transform="translate(32.78 89.1) rotate(-76.66)"/>
-      <rect class="cls-1" x="6.34" y="16.45" width="2" height="14.85" transform="translate(-17.62 22.84) rotate(-70.54)"/>
-      <rect class="cls-1" x="6.65" y="78.89" width="2" height="18.32" transform="translate(-64.59 37.13) rotate(-49.86)"/>
-      <g>
-        <rect class="cls-1" x="41.9" y="51.63" width="2" height="10.57"/>
-        <rect class="cls-1" x="37.62" y="55.91" width="10.57" height="2"/>
-      </g>
-    </g>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Warstwa_2_00000084509582386889585950000015308001120841105852_"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 113.7 106.2"
+	 style="enable-background:new 0 0 113.7 106.2;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.45;fill:#E8F0FB;enable-background:new    ;}
+	.st1{fill:#2986FF;stroke:#2986FF;stroke-miterlimit:10;}
+</style>
+<circle class="st0" cx="60.6" cy="53.1" r="53.1"/>
+<path class="st1" d="M76.6,82.9H14V20.3h62.6V82.9L76.6,82.9z M16,80.9h58.6V22.3H16V80.9L16,80.9z"/>
+<path class="st1" d="M97.4,94.7H28V25.3h69.4L97.4,94.7L97.4,94.7z M30,92.7h65.4V27.3H30L30,92.7L30,92.7z"/>
+<rect x="85.3" y="75.3" transform="matrix(0.4926 -0.8703 0.8703 0.4926 -32.1746 119.3485)" class="st1" width="2" height="24"/>
+<rect x="85.7" y="13.1" transform="matrix(0.2307 -0.973 0.973 0.2307 43.5561 102.7272)" class="st1" width="2" height="21.5"/>
+<rect x="20.3" y="16.4" transform="matrix(0.3331 -0.9429 0.9429 0.3331 -8.2746 36.0469)" class="st1" width="2" height="14.9"/>
+<rect x="20.7" y="78.9" transform="matrix(0.6447 -0.7645 0.7645 0.6447 -59.6091 47.8468)" class="st1" width="2" height="18.3"/>
+<g>
+	<rect x="55.9" y="51.6" class="st1" width="2" height="10.6"/>
+	<rect x="51.6" y="55.9" class="st1" width="10.6" height="2"/>
+</g>
 </svg>
