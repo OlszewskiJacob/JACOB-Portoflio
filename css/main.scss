@@ -618,6 +618,7 @@ header {
     margin: auto;
     top: 0px;
     right: 0px;
+
     // width: 25%;
 
     h1 {
@@ -864,6 +865,7 @@ header {
     .Skill-seven-descryption,
     .Skill-eight-descryption {
         opacity: 0.77;
+        transition: 600ms;
     }
 
     .button-skill-read-more {
@@ -875,6 +877,7 @@ header {
     }
 
     #copyHeader {
+        transition: 600ms;
         color: #2986FF;
     }
 }
@@ -1110,7 +1113,7 @@ header {
     color: #3D3D3D;
     padding: 0em 0em 4em 0em;
     font-size: 16px;
-    line-height: 32px;
+    // line-height: 32px;
     width: 600px;
     top: 0;
     left: 0;
@@ -1209,7 +1212,10 @@ header {
 .portfolio-block-second,
 .portfolio-block-third,
 .portfolio-block-fourth,
-.portfolio-block-fifth // .portfolio-block-sixth
+.portfolio-block-fifth,
+.portfolio-block-sixth,
+.portfolio-block-seventh,
+.portfolio-block-eight
 
     {
     align-items: center;

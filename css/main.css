@@ -823,6 +823,7 @@ header .ul-Contact:active {
 .Skill-eight:hover .Skill-seven-descryption,
 .Skill-eight:hover .Skill-eight-descryption {
   opacity: 0.77;
+  transition: 600ms;
 }
 .Skill-one:hover .button-skill-read-more,
 .Skill-two:hover .button-skill-read-more,
@@ -846,6 +847,7 @@ header .ul-Contact:active {
 .Skill-six:hover #copyHeader,
 .Skill-seven:hover #copyHeader,
 .Skill-eight:hover #copyHeader {
+  transition: 600ms;
   color: #2986FF;
 }
 
@@ -1044,7 +1046,6 @@ header .ul-Contact:active {
   color: #3D3D3D;
   padding: 0em 0em 4em 0em;
   font-size: 16px;
-  line-height: 32px;
   width: 600px;
   top: 0;
   left: 0;
@@ -1136,7 +1137,10 @@ header .ul-Contact:active {
 .portfolio-block-second,
 .portfolio-block-third,
 .portfolio-block-fourth,
-.portfolio-block-fifth {
+.portfolio-block-fifth,
+.portfolio-block-sixth,
+.portfolio-block-seventh,
+.portfolio-block-eight {
   align-items: center;
   display: none;
   margin: auto;
@@ -1148,7 +1152,10 @@ header .ul-Contact:active {
 .portfolio-block-second,
 .portfolio-block-third,
 .portfolio-block-fourth,
-.portfolio-block-fifth {
+.portfolio-block-fifth,
+.portfolio-block-sixth,
+.portfolio-block-seventh,
+.portfolio-block-eight {
     width: 219.42px;
     height: 123.42px;
   }
