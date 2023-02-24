@@ -189,10 +189,10 @@ header .ul-Contact {
 }
 @media only screen and (max-width: 600px) and (min-width: 0px) {
   header .ul-Home,
-header .ul-Skills,
-header .ul-About,
-header .ul-Portfolio,
-header .ul-Contact {
+  header .ul-Skills,
+  header .ul-About,
+  header .ul-Portfolio,
+  header .ul-Contact {
     display: none;
   }
 }
@@ -280,7 +280,7 @@ header .ul-Contact:active {
   background-position: top 0px right 0px;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 11em 0em 8em 0em;
+  padding: 11em 0em 10em 0em;
 }
 @media only screen and (max-width: 1400px) and (min-width: 600px) {
   .Home {
@@ -322,29 +322,12 @@ header .ul-Contact:active {
   left: 0;
   width: 2px;
   height: 70px;
-  -webkit-animation: TextLineLoop 1450ms infinite linear;
-          animation: TextLineLoop 1450ms infinite linear;
+  animation: TextLineLoop 1450ms infinite linear;
 }
 @media only screen and (max-width: 600px) and (min-width: 0px) {
   .title-line {
     display: none !important;
-    -webkit-animation: none;
-            animation: none;
-  }
-}
-
-@-webkit-keyframes TextLineLoop {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  51% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
+    animation: none;
   }
 }
 
@@ -370,7 +353,7 @@ header .ul-Contact:active {
 .meet {
   text-align: left;
   font-size: 16px;
-  line-height: 32px;
+  line-height: 22px;
   letter-spacing: 0.7px;
   width: 600px;
   font-weight: 600;
@@ -488,7 +471,7 @@ header .ul-Contact:active {
 }
 
 #copyHeader-seven-sec {
-  padding: 0em 0em 1em 0em;
+  padding: 0em 0em 0em 0em;
   font-size: 14px;
 }
 
@@ -634,7 +617,7 @@ header .ul-Contact:active {
 }
 
 .Skill-seven-descryption {
-  padding: 0em 0em 0em 0em;
+  padding: 0em 0em 0.5em 0em;
 }
 
 .SkillFlipVariable {
@@ -840,13 +823,29 @@ header .ul-Contact:active {
   background-color: transparent;
 }
 .Skill-one:hover #copyHeader,
+.Skill-one:hover #copyHeader-seven,
+.Skill-one:hover #copyHeader-seven-sec,
 .Skill-two:hover #copyHeader,
+.Skill-two:hover #copyHeader-seven,
+.Skill-two:hover #copyHeader-seven-sec,
 .Skill-three:hover #copyHeader,
+.Skill-three:hover #copyHeader-seven,
+.Skill-three:hover #copyHeader-seven-sec,
 .Skill-four:hover #copyHeader,
+.Skill-four:hover #copyHeader-seven,
+.Skill-four:hover #copyHeader-seven-sec,
 .Skill-five:hover #copyHeader,
+.Skill-five:hover #copyHeader-seven,
+.Skill-five:hover #copyHeader-seven-sec,
 .Skill-six:hover #copyHeader,
+.Skill-six:hover #copyHeader-seven,
+.Skill-six:hover #copyHeader-seven-sec,
 .Skill-seven:hover #copyHeader,
-.Skill-eight:hover #copyHeader {
+.Skill-seven:hover #copyHeader-seven,
+.Skill-seven:hover #copyHeader-seven-sec,
+.Skill-eight:hover #copyHeader,
+.Skill-eight:hover #copyHeader-seven,
+.Skill-eight:hover #copyHeader-seven-sec {
   transition: 600ms;
   color: #2986FF;
 }
@@ -1010,8 +1009,8 @@ header .ul-Contact:active {
 }
 
 .Portfolio-showcase {
-  background-color: #fff;
-  padding: 8em 0em 8em 0em;
+  background-color: #FAFAFC;
+  padding: 10em 0em 0em 0em;
   text-align: center;
   width: 100%;
 }
@@ -1078,17 +1077,6 @@ header .ul-Contact:active {
   }
 }
 
-.Slider-Arrow-right,
-.Slider-Arrow-left {
-  transition: 400ms;
-  border: none;
-  background-color: #fff;
-  font-size: 78px;
-  font-weight: 100;
-}
-
-.Slider-Arrow-left,
-.Slider-Arrow-right,
 .slider-portfolio-images-container {
   display: inline-block;
   position: relative;
@@ -1099,26 +1087,11 @@ header .ul-Contact:active {
 }
 
 .slider-portfolio-images-container {
-  width: 768px;
-  height: 432px;
+  width: 100%;
+  height: 500px;
   position: relative;
   top: 0;
   left: 0;
-}
-
-.Slider-Arrow-left,
-.Slider-Arrow-right {
-  width: 80px;
-  height: auto;
-  position: relative;
-  top: 0;
-  left: 0;
-  color: #3D3D3D;
-}
-
-.Slider-Arrow-right:hover,
-.Slider-Arrow-left:hover {
-  font-size: 82px;
 }
 
 .portfolio-carousel-container {
@@ -1141,24 +1114,37 @@ header .ul-Contact:active {
 .portfolio-block-sixth,
 .portfolio-block-seventh,
 .portfolio-block-eight {
+  margin: 0em 1em;
   align-items: center;
   display: none;
-  margin: auto;
-  width: 768px;
-  height: 432px;
+  width: 500px;
+  height: 400px;
+  filter: drop-shadow(1px 1px 5px #a0a0a0);
 }
 @media only screen and (max-width: 600px) and (min-width: 0px) {
   .portfolio-block-first,
-.portfolio-block-second,
-.portfolio-block-third,
-.portfolio-block-fourth,
-.portfolio-block-fifth,
-.portfolio-block-sixth,
-.portfolio-block-seventh,
-.portfolio-block-eight {
+  .portfolio-block-second,
+  .portfolio-block-third,
+  .portfolio-block-fourth,
+  .portfolio-block-fifth,
+  .portfolio-block-sixth,
+  .portfolio-block-seventh,
+  .portfolio-block-eight {
     width: 219.42px;
     height: 123.42px;
   }
+}
+
+.portfolio-block-first:hover,
+.portfolio-block-second:hover,
+.portfolio-block-third:hover,
+.portfolio-block-fourth:hover,
+.portfolio-block-fifth:hover,
+.portfolio-block-sixth:hover,
+.portfolio-block-seventh:hover,
+.portfolio-block-eight:hover {
+  transform: scale(1.025);
+  filter: drop-shadow(1px 1px 15px #a0a0a0);
 }
 
 .Slider-Portfolio {
@@ -1166,8 +1152,21 @@ header .ul-Contact:active {
   display: none;
 }
 
-.portfolio-block-first {
-  display: block;
+.firstBlock,
+.secBlock {
+  display: inline-block;
+}
+.firstBlock p,
+.secBlock p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #3D3D3D;
+}
+
+.portfolio-block-first,
+.portfolio-block-second,
+.portfolio-block-third {
+  display: inline-block;
 }
 
 .Contact-section {
@@ -1212,7 +1211,7 @@ header .ul-Contact:active {
 }
 @media only screen and (max-width: 600px) and (min-width: 0px) {
   .image-contact,
-.copy-contact {
+  .copy-contact {
     display: block;
     margin: auto;
     width: 100%;
